@@ -1,16 +1,106 @@
 @font-face {
-    font-family: 'Avenir Next LT Pro';
-    src: url('AvenirNextLTPro-Bold.woff2') format('woff2'),
-        url('AvenirNextLTPro-Bold.woff') format('woff');
-    font-weight: bold;
+    font-family: 'e-Ukraine Head LOGO';
+    src: url('e-UkraineHead-LOGO.woff2') format('woff2'),
+        url('e-UkraineHead-LOGO.woff') format('woff');
+    font-weight: 500;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Avenir Next LT Pro';
-    src: url('AvenirNextLTPro-Regular.woff2') format('woff2'),
-        url('AvenirNextLTPro-Regular.woff') format('woff');
+    font-family: 'e-Ukraine Head LOGO';
+    src: url('e-UkraineHead-LOGO.woff2') format('woff2'),
+        url('e-UkraineHead-LOGO.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'e-Ukraine Head LOGO';
+    src: url('e-UkraineHead-LOGO.woff2') format('woff2'),
+        url('e-UkraineHead-LOGO.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'e-Ukraine Head NAME';
+    src: url('e-UkraineHead-NAME.woff2') format('woff2'),
+        url('e-UkraineHead-NAME.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'e-Ukraine Head NAME';
+    src: url('e-UkraineHead-NAME.woff2') format('woff2'),
+        url('e-UkraineHead-NAME.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'e-Ukraine Head LOGO';
+    src: url('e-UkraineHead-LOGO.woff2') format('woff2'),
+        url('e-UkraineHead-LOGO.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'e-Ukraine Head NAME';
+    src: url('e-UkraineHead-NAME.woff2') format('woff2'),
+        url('e-UkraineHead-NAME.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'e-Ukraine Head NAME';
+    src: url('e-UkraineHead-NAME.woff2') format('woff2'),
+        url('e-UkraineHead-NAME.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'e-Ukraine Head';
+    src: url('e-UkraineHead-Regular.woff2') format('woff2'),
+        url('e-UkraineHead-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'e-Ukraine Head';
+    src: url('e-UkraineHead-Regular.woff2') format('woff2'),
+        url('e-UkraineHead-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'e-Ukraine Head';
+    src: url('e-UkraineHead-Regular.woff2') format('woff2'),
+        url('e-UkraineHead-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'e-Ukraine Head';
+    src: url('e-UkraineHead-Regular.woff2') format('woff2'),
+        url('e-UkraineHead-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
