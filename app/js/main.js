@@ -14,3 +14,10 @@ const swiper = new Swiper(".mySwiper", {
         clickable: true,
     },
 });
+
+function showCalendar() {
+    var dateInput = document.getElementById("myDate");
+    var calendar = new Date();
+    var picker = new Calendar(dateInput, calendar);
+    picker.show();
+}

@@ -7,8 +7,17 @@
     <list default="true" id="12f65b34-37bd-4e6f-a6ab-fc27e14f9bf1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/fonts/demo.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/fonts/demo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/fonts/e-UkraineHead-LOGO.woff" beforeDir="false" afterPath="$PROJECT_DIR$/app/fonts/e-UkraineHead-LOGO.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/fonts/e-UkraineHead-LOGO.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/app/fonts/e-UkraineHead-LOGO.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/fonts/e-UkraineHead-NAME.woff" beforeDir="false" afterPath="$PROJECT_DIR$/app/fonts/e-UkraineHead-NAME.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/fonts/e-UkraineHead-NAME.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/app/fonts/e-UkraineHead-NAME.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/fonts/e-UkraineHead-Regular.woff" beforeDir="false" afterPath="$PROJECT_DIR$/app/fonts/e-UkraineHead-Regular.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/fonts/e-UkraineHead-Regular.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/app/fonts/e-UkraineHead-Regular.woff2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/fonts/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/fonts/stylesheet.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/js/app.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/js/app.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/js/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/scss/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/scss/style.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

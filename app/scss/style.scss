@@ -4,7 +4,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: 'e-Ukraine Head';
+	font-family: 'e-Ukraine';
 	font-weight: normal;
 	font-style: normal;
 }
@@ -12,7 +12,10 @@
 :root{
 	--container: 1110px;
 
-	
+	--white: #FFF;
+	--black: #1C1D1E;
+	--border: #DFDFDF;
+	--header-bgd: linear-gradient(90deg, #1B1B1D 40.94%, #383E45 100%);;
 }
 
 body {
@@ -104,3 +107,87 @@ select {
 }
 
 
+
+.header{
+	background: var(--header-bgd);
+	padding-top: 20px;
+
+	&__inner{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		img{
+			max-width: 108px;
+		}
+	}
+
+	&__social{
+		display: flex;
+		gap: 10px;
+	}
+}
+
+.banner{
+	background: var(--header-bgd);
+	padding: 20px 0;
+
+	h1{
+		font-size: 20px;
+		color: var(--white);
+		margin-bottom: 15px;
+	}
+
+	&__form{
+		display: flex;
+		flex-direction: column;
+		gap: 5px;
+
+		input[type='text']{
+			background-image: url(../img/lupa.svg);
+			background-position: 10px 10px;
+			background-repeat: no-repeat;
+
+			padding: 10px 10px 10px 39px;
+			border-radius: 8px;
+			width: 100%;
+			font-size: 16px;
+			color: var(--black);
+
+			&::placeholder{
+				font-size: 16px;
+				color: var(--black);
+			}
+		}
+
+		input[type="date"]::-webkit-calendar-picker-indicator {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			opacity: 0;
+		}
+
+		input[type='date']{
+			position: relative;
+			width: 100%;
+			max-width: 128px;
+			border-radius: 8px 0 0 8px;
+			padding: 10px 0 10px 39px;
+			font-size: 14px;
+			font-weight: 300;
+			line-height: 140%;
+			border-right: 1px solid var(--border);
+
+			background-image: url(../img/calendar.svg);
+			background-position: 10px 10px;
+			background-repeat: no-repeat;
+		}
+
+	}
+
+	&__form_date{
+
+	}
+}
