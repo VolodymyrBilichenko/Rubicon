@@ -198,7 +198,10 @@ button {
   --white: #FFF;
   --black: #1C1D1E;
   --border: #DFDFDF;
-  --header-bgd: linear-gradient(90deg, #1B1B1D 40.94%, #383E45 100%)
+  --gray-border: #939393;
+  --header-bgd: linear-gradient(90deg, #1B1B1D 40.94%, #383E45 100%);
+  --white-bgd: #F5F5F5;
+  --yellow: #FFCE1F
 }
 body {
   margin: 0;
@@ -361,9 +364,10 @@ textarea {
 .banner__form input[type=date] {
   position: relative;
   width: 100%;
+  height: 44px;
   max-width: 128px;
   border-radius: 8px 0 0 8px;
-  padding: 10px 0 10px 39px;
+  padding: 12px 10px 12px 39px;
   font-size: 14px;
   font-weight: 300;
   line-height: 140%;
@@ -371,4 +375,165 @@ textarea {
   background-image: url(../img/calendar.svg);
   background-position: 10px 10px;
   background-repeat: no-repeat
+}
+.banner__form_date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center
+}
+.banner__form_passenger {
+  width: 100%
+}
+.banner__form_passenger button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 12px 10px;
+  background: var(--white);
+  border-radius: 0 8px 8px 0;
+  width: 100%
+}
+.banner__form_passenger .passenger__txt {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 140%
+}
+.banner__form_passenger img {
+  max-width: 20px;
+  margin-right: 5px
+}
+.banner__form_passenger .passenger__txt_margin {
+  margin-bottom: 10px
+}
+.banner__form_passenger .form_passenger_body {
+  display: none;
+  background: var(--white);
+  border-radius: 0 0 8px 8px;
+  padding: 10px 35px
+}
+.schedule {
+  padding-top: 50px;
+  background: var(--white-bgd)
+}
+.schedule h2 {
+  font-size: 20px;
+  color: var(--black);
+  margin-bottom: 20px
+}
+.schedule__reverse {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: var(--white);
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px
+}
+.schedule__arrow {
+  margin-left: auto;
+  border-radius: 50%;
+  padding: 13px;
+  border: 1px solid var(--gray-border);
+  cursor: pointer
+}
+.schedule__arrow img {
+  max-width: 24px
+}
+.schedule__reverse_con h3 {
+  color: var(--gray-border);
+  margin-bottom: 6px;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 140%
+}
+.schedule__reverse_con p {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 140%
+}
+.schedule__filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px
+}
+.schedule__filter li {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 10px
+}
+.schedule__filter img {
+  max-width: 24px;
+  margin-left: auto
+}
+.schedule__filter p {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 140%;
+  color: var(--black);
+  margin-right: 10px
+}
+.schedule__filter .filter__arrows {
+  max-width: 27px
+}
+.schedule__filter_li {
+  width: 100%;
+  max-width: 170px
+}
+.schedule__date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex
+}
+.schedule__date li {
+  padding: 5px 10px 10px;
+  background: var(--white);
+  border-radius: 8px;
+  border-bottom: 5px solid var(--border)
+}
+.schedule__date__departure {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center
+}
+.schedule__date__departure p {
+  font-size: 12px;
+  color: var(--gray-border);
+  margin-right: 5px
+}
+.schedule__date__departure .departure__places {
+  font-size: 12px;
+  font-weight: 300;
+  color: var(--gray-border);
+  padding: 4px;
+  border-radius: 50%;
+  background: var(--white-bgd)
+}
+.schedule__date__departure .departure__price {
+  font-size: 10px;
+  font-weight: 300;
+  color: var(--gray-border)
 }
