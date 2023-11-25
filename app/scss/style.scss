@@ -1,51 +1,61 @@
 @import "includes/normalize.scss";
 
-*{
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: 'e-Ukraine';
-	font-weight: normal;
-	font-style: normal;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'e-Ukraine';
+  font-weight: normal;
+  font-style: normal;
 }
 
-:root{
-	--container: 1110px;
+:root {
+  --container: 1110px;
 
-	--white: #FFF;
-	--black: #1C1D1E;
-	--border: #DFDFDF;
-	--gray-border: #939393;
-	--header-bgd: linear-gradient(90deg, #1B1B1D 40.94%, #383E45 100%);;
-	--white-bgd: #F5F5F5;
-	--yellow: #FFCE1F;
+  --white: #FFF;
+  --black: #1C1D1E;
+  --border: #DFDFDF;
+  --gray-border: #939393;
+  --header-bgd: linear-gradient(90deg, #1B1B1D 40.94%, #383E45 100%);;
+  --white-bgd: #F5F5F5;
+  --yellow: #FFCE1F;
+  --yellow-opacity: #FFF7DA;
+  --yellow-rat: #CEA924;
+  --green: #488F60;
+  --yellow-2: #FFDB5F;
+  --red: #DF4723;
+  --red-opacity: #FEDDDD;
+  --blue: #3F6B9E;
+  --blue-opacity: #F1F7FF;
+  --bgd-recomend: #E7F6EC;
 
 }
 
 body {
-	margin: 0;
-	font-size: 16px;
-	max-width: 1920px;
-	/* line-height: Line-height(24)/font-size(16)=1.5 */
-	line-height: 1.5;
-	letter-spacing: 0.02em;
-	box-sizing: border-box;
-	background-color: var(--body-bgd);
+  margin: 0;
+  font-size: 16px;
+  max-width: 1920px;
+  /* line-height: Line-height(24)/font-size(16)=1.5 */
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  box-sizing: border-box;
+  background-color: var(--body-bgd);
 }
 
 main {
-	overflow-x: hidden;
-}
-html{
-	scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
-.container{
-	max-width: calc(var(--container) + 30px);
-	margin: 0 auto;
-	width: 100%;
-	padding-left: 15px;
-	padding-right: 15px;
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: calc(var(--container) + 30px);
+  margin: 0 auto;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 h1,
@@ -55,303 +65,702 @@ h4,
 h5,
 h6,
 p {
-	margin: 0;
+  margin: 0;
 }
 
 p:last-child {
-	margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 ul,
 ol {
-	margin: 0;
-	padding: 0;
-	list-style: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 a {
-	color: currentColor;
-	text-decoration: none;
+  color: currentColor;
+  text-decoration: none;
 }
 
 button {
-	cursor: pointer;
-	outline: none;
-	border: none;
-	background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background-color: transparent;
 }
 
 img {
-	display: block;
-	width: 100%;
-	height: 100%;
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 input,
 button,
 textarea,
 select {
-	font: inherit;
-	border: none;
-	outline: none;
+  font: inherit;
+  border: none;
+  outline: none;
 }
 
 .h-hidden {
-	position: absolute;
-	width: 1px;
-	height: 1px;
-	margin: -1px;
-	border: 0;
-	padding: 0;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
 
-	white-space: nowrap;
-	clip-path: inset(100%);
-	clip: rect(0 0 0 0);
-	overflow: hidden;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 
+.header {
+  background: var(--header-bgd);
+  padding-top: 20px;
 
-.header{
-	background: var(--header-bgd);
-	padding-top: 20px;
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
-	&__inner{
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
+    img {
+      max-width: 108px;
+    }
+  }
 
-		img{
-			max-width: 108px;
-		}
-	}
-
-	&__social{
-		display: flex;
-		gap: 10px;
-	}
+  &__social {
+    display: flex;
+    gap: 10px;
+  }
 }
 
-.banner{
-	background: var(--header-bgd);
-	padding: 20px 0;
+.banner {
+  background: var(--header-bgd);
+  padding: 20px 0;
 
-	h1{
-		font-size: 20px;
-		color: var(--white);
-		margin-bottom: 15px;
-	}
+  h1 {
+    font-size: 20px;
+    color: var(--white);
+    margin-bottom: 15px;
+  }
 
-	&__form{
-		display: flex;
-		flex-direction: column;
-		gap: 5px;
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 
-		input[type='text']{
-			background-image: url(../img/lupa.svg);
-			background-position: 10px 10px;
-			background-repeat: no-repeat;
+    input[type='text'] {
+      background-image: url(../img/lupa.svg);
+      background-position: 10px 10px;
+      background-repeat: no-repeat;
 
-			padding: 10px 10px 10px 39px;
-			border-radius: 8px;
-			width: 100%;
-			font-size: 16px;
-			color: var(--black);
+      padding: 10px 10px 10px 39px;
+      border-radius: 8px;
+      width: 100%;
+      font-size: 16px;
+      color: var(--black);
 
-			&::placeholder{
-				font-size: 16px;
-				color: var(--black);
-			}
-		}
+      &::placeholder {
+        font-size: 16px;
+        color: var(--black);
+      }
+    }
 
-		input[type="date"]::-webkit-calendar-picker-indicator {
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-			opacity: 0;
-		}
+    input[type="date"]::-webkit-calendar-picker-indicator {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+    }
 
-		input[type='date']{
-			position: relative;
-			width: 100%;
-			height: 44px;
-			max-width: 128px;
-			border-radius: 8px 0 0 8px;
-			padding: 12px 10px 12px 39px;
-			font-size: 14px;
-			font-weight: 300;
-			line-height: 140%;
-			border-right: 1px solid var(--border);
+    input[type='date'] {
+      position: relative;
+      width: 100%;
+      height: 44px;
+      max-width: 128px;
+      border-radius: 8px 0 0 8px;
+      padding: 12px 10px 12px 39px;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 140%;
+      border-right: 1px solid var(--border);
 
-			background-image: url(../img/calendar.svg);
-			background-position: 10px 10px;
-			background-repeat: no-repeat;
-		}
+      background-image: url(../img/calendar.svg);
+      background-position: 10px 10px;
+      background-repeat: no-repeat;
+    }
 
-	}
+  }
 
-	&__form_date{
-		display: flex;
-		align-items: center;
-	}
+  &__form_date {
+    display: flex;
+    align-items: center;
+  }
 
-	&__form_passenger{
-		width: 100%;
+  &__form_passenger {
+    width: 100%;
 
-		button{
-			display: flex;
-			align-items: center;
-			padding: 12px 10px;
-			background: var(--white);
-			border-radius: 0 8px 8px 0;
-			width: 100%;
-		}
+    button {
+      display: flex;
+      align-items: center;
+      padding: 12px 10px;
+      background: var(--white);
+      border-radius: 0 8px 8px 0;
+      width: 100%;
+    }
 
-		.passenger__txt{
-			font-size: 14px;
-			font-weight: 300;
-			line-height: 140%;
-		}
+    .passenger__txt {
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 140%;
+    }
 
-		img{
-			max-width: 20px;
-			margin-right: 5px;
-		}
+    img {
+      max-width: 20px;
+      margin-right: 5px;
+    }
 
-		.passenger__txt_margin{
-			margin-bottom: 10px;
-		}
+    .passenger__txt_margin {
+      margin-bottom: 10px;
+    }
 
-		.form_passenger_body{
-			display: none;
-			background: var(--white);
-			border-radius: 0 0 8px 8px;
-			padding: 10px 35px;
-		}
-	}
+    .form_passenger_body {
+      display: none;
+      background: var(--white);
+      border-radius: 0 0 8px 8px;
+      padding: 10px 35px;
+    }
+  }
 }
 
-.schedule{
-	padding-top: 50px;
-	background: var(--white-bgd);
+.schedule {
+  padding-top: 50px;
+  background: var(--white-bgd);
 
-	h2{
-		font-size: 20px;
-		color: var(--black);
-		margin-bottom: 20px;
-	}
+  h2 {
+    font-size: 20px;
+    color: var(--black);
+    margin-bottom: 20px;
+  }
 
-	&__reverse{
-		display: flex;
-		align-items: center;
-		background: var(--white);
-		padding: 15px;
-		border-radius: 8px;
-		margin-bottom: 20px;
-	}
+  &__reverse {
+    display: flex;
+    align-items: center;
+    background: var(--white);
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
 
-	&__arrow{
-		margin-left: auto;
-		border-radius: 50%;
-		padding: 13px;
-		border: 1px solid var(--gray-border);
-		cursor: pointer;
-		img{
-			max-width: 24px;
-		}
+  &__arrow {
+    margin-left: auto;
+    border-radius: 50%;
+    padding: 13px;
+    border: 1px solid var(--gray-border);
+    cursor: pointer;
 
-	}
+    img {
+      max-width: 24px;
+    }
 
-	&__reverse_con{
-		h3{
-			color: var(--gray-border);
-			margin-bottom: 6px;
-			font-size: 14px;
-			font-weight: 300;
-			line-height: 140%;
-		}
+  }
 
-		p{
-			font-size: 14px;
-			font-weight: 300;
-			line-height: 140%;
-		}
-	}
+  &__reverse_con {
+    h3 {
+      color: var(--gray-border);
+      margin-bottom: 6px;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 140%;
+    }
 
-	&__filter{
-		display: flex;
-		align-items: center;
-		gap: 10px;
-		margin-bottom: 15px;
+    p {
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 140%;
+    }
+  }
 
-		li{
-			background: var(--white);
-			border: 1px solid var(--border);
-			border-radius: 8px;
-			display: flex;
-			align-items: center;
-			padding: 10px;
-		}
+  &__filter {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
 
-		img{
-			max-width: 24px;
-			margin-left: auto;
-		}
+    li {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      padding: 10px;
+    }
 
-		p{
-			font-size: 14px;
-			font-weight: 300;
-			line-height: 140%;
-			color: var(--black);
-			margin-right: 10px;
-		}
+    img {
+      max-width: 24px;
+      margin-left: auto;
+    }
 
-		.filter__arrows{
-			max-width: 27px;
-		}
-	}
+    p {
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 140%;
+      color: var(--black);
+      margin-right: 10px;
+    }
 
-	&__filter_li{
-		width: 100%;
-		max-width: 170px;
-	}
+    .filter__arrows {
+      max-width: 27px;
+    }
+  }
 
-	&__date{
-		display: flex;
+  &__filter_li {
+    width: 100%;
+    max-width: 170px;
+  }
 
-		li{
-			padding: 5px 10px 10px;
-			background: var(--white);
-			border-radius: 8px;
-			border-bottom: 5px solid var(--border);
-		}
-	}
+  &__date {
+    display: flex;
+  }
 
-	&__date__departure{
-		display: flex;
-		align-items: center;
+  .schedule__date_li {
+    padding: 5px 10px 10px;
+    background: var(--white);
+    border-bottom: 5px solid var(--border);
 
-		p{
-			font-size: 12px;
-			color: var(--gray-border);
-			margin-right: 5px;
-		}
+    &:first-child {
+      border-radius: 10px 0 0 10px;
+    }
 
-		.departure__places{
-			font-size: 12px;
-			font-weight: 300;
-			color: var(--gray-border);
-			padding: 4px;
-			border-radius: 50%;
-			background: var(--white-bgd);
-		}
+    &:last-child {
+      border-radius: 0 10px 10px 0;
+    }
+  }
 
-		.departure__price{
-			font-size: 10px;
-			font-weight: 300;
-			color: var(--gray-border);
-		}
-	}
+  &__date__departure {
+    display: flex;
+    align-items: center;
+
+    p {
+      font-size: 12px;
+      color: var(--gray-border);
+      margin-right: 4px;
+    }
+
+    .departure__places {
+      font-size: 12px;
+      font-weight: 300;
+      color: var(--gray-border);
+      padding: 4px;
+      border-radius: 50%;
+      background: var(--white-bgd);
+      margin-right: 0;
+    }
+
+  }
+
+  .departure__price {
+    font-size: 10px;
+    font-weight: 300;
+    color: var(--gray-border);
+  }
+
+  .schedule__date_active {
+    border-bottom: 5px solid var(--yellow);
+
+    .schedule__date__departure {
+      p {
+        color: var(--black);
+      }
+    }
+
+    .departure__price {
+      color: var(--black);
+    }
+  }
+}
+
+.ticket{
+  padding: 20px 0 100px;
+  background: var(--white-bgd);
+}
+.ticket__list{
+
+  li{
+    padding: 15px;
+    border-radius: 8px;
+    background: var(--white);
+    box-shadow: 0px 0px 10px 0px rgba(108, 108, 108, 0.40);
+    margin-bottom: 20px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+
+  .ticket__title{
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--white-bgd);
+    margin-bottom: 15px;
+  }
+
+  .ticket__header{
+    display: flex;
+    align-items: center;
+
+    p{
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 140%;
+    }
+  }
+
+  .ticket__logo{
+    padding: 5px;
+    background: var(--border);
+    border-radius: 50%;
+    margin-right: 5px;
+    img{
+      max-width: 20px;
+    }
+  }
+
+  .ticket__rating{
+    margin-left: auto;
+
+    p{
+      padding: 8px 10px;
+      background: var(--yellow-opacity);
+      border-radius: 16.5px;
+      color: var(--yellow-rat);
+      font-size: 12px;
+    }
+  }
+
+  .ticket__info__first{
+    display: flex;
+    margin-bottom: 9px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+
+  .ticket__time{
+    //min-height: 115px;
+    margin-left: 5px;
+    display: flex;
+    flex-direction: column;
+
+    h3{
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 140%;
+    }
+    p{
+      font-size: 10px;
+      font-weight: 300;
+      display: flex;
+      align-items: center;
+      color: var(--gray-border);
+      margin-top: auto;
+      white-space: nowrap;
+      img{
+        max-width: 10px;
+        margin-right: 3px;
+      }
+    }
+  }
+
+  .ticket__info{
+    margin-bottom: 15px;
+  }
+
+  .time__opacity{
+    opacity: 0;
+  }
+
+  .ticket__city{
+    margin-left: -14px;
+    h2{
+      display: flex;
+      align-items: center;
+      font-size: 16px;
+      font-weight: 400;
+      color: var(--black);
+      margin-bottom: 5px;
+    }
+    img{
+      max-width: 17px;
+      margin-left: 3px;
+    }
+
+    .ticket__city_mar{
+      margin-bottom: 0;
+    }
+    
+    p{
+      font-size: 12px;
+      font-weight: 300;
+      color: var(--gray-border);
+      margin-bottom: 25px;
+    }
+  }
+
+  .ticket__arrival{
+    background: var(--border);
+    border-radius: 8px;
+    display: flex;
+    padding: 10px;
+    margin-bottom: 15px;
+
+    img{
+      max-width: 20px;
+      margin-right: 5px;
+    }
+
+    p{
+      font-size: 12px;
+      color: var(--black);
+    }
+  }
+
+  .ticket__graphic{
+    padding-top: 15px;
+    border-top: 1px solid var(--white-bgd);
+    margin-bottom: 15px;
+  }
+
+  .graphic__title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .graphic__lft{
+    display: flex;
+    align-items: center;
+
+    .graphic__calendar{
+      margin-right: 5px;
+      background: var(--white-bgd);
+      padding: 4px;
+      border-radius: 50%;
+      img{
+        max-width: 13px;
+      }
+    }
+
+    h3{
+      font-size: 12px;
+      font-weight: 300;
+      color: var(--gray-border);
+
+      span{
+        font-size: 12px;
+        font-weight: 300;
+        color: var(--black);
+      }
+    }
+  }
+
+  .graphic__rht{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    p{
+      font-size: 12px;
+      font-weight: 300;
+      color: var(--black);
+    }
+  }
+  .graphic__item{
+    padding: 4px;
+    background: var(--white-bgd);
+    border-radius: 50%;
+
+    img{
+      max-width: 13px;
+    }
+  }
+
+  .details__places__people{
+    background: var(--white-bgd);
+    border-radius: 50%;
+    padding: 4px;
+
+    img{
+      max-width: 14px;
+    }
+  }
+
+  .details__places{
+    display: flex;
+    align-items: center;
+
+    p{
+      font-size: 12px;
+      font-weight: 300;
+      color: var(--black);
+      white-space: nowrap;
+      margin-left: 5px;
+    }
+  }
+
+  .ticket__details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--white-bgd);
+  }
+
+  .details__btn{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 221px;
+    padding: 3.5px 54.5px;
+    background: var(--white-bgd);
+    margin-left: 15px;
+    border-radius: 8px;
+
+    font-size: 12px;
+    color: var(--gray-border);
+
+    img{
+      max-width: 24px;
+      margin-left: 8px;
+    }
+  }
+
+  .ticket__cost{
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+
+    h2{
+      font-size: 20px;
+      color: var(--black);
+    }
+
+    p{
+      font-size: 12px;
+      color: var(--green);
+      margin-left: 5px;
+    }
+
+    img{
+      max-width: 20px;
+    }
+  }
+
+  .ticket__prepayment{
+    display: flex;
+    align-items: center;
+  }
+
+  .ticket__bron{
+    padding: 15px 25px;
+    background: var(--yellow);
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 7px;
+
+    font-size: 14px;
+    text-transform: uppercase;
+    color: var(--black);
+  }
+
+  .ticket__posadka{
+    font-size: 12px;
+    color: var(--gray-border);
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .ticket__recomend{
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--white-bgd);
+    margin-bottom: 15px;
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+  }
+
+  .rubicon__recomend{
+    background: var(--yellow-2);
+    border-radius: 17px;
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+    padding: 4.5px 7px;
+
+    img{
+      max-width: 15px;
+      margin-right: 5px;
+    }
+  }
+
+  .rubicon__reis{
+    padding: 6px 9.5px;
+    background: var(--red-opacity);
+    border-radius: 17px;
+    p{
+      color: var(--red);
+      font-size: 10px;
+    }
+  }
+
+  .rubicon__fast{
+    padding: 6px 9.5px;
+    border-radius: 17px;
+    background: var(--blue-opacity);
+
+    p{
+      font-size: 10px;
+      color: var(--blue);
+    }
+  }
+
+  .rubicon__chip{
+    padding: 6px 9.5px;
+    border-radius: 17px;
+    background: var(--bgd-recomend);
+
+    p{
+      font-size: 10px;
+      color: var(--green);
+    }
+  }
+
+  .ticket__prepayment_fiv{
+    display: flex;
+    align-items: center;
+
+    img{
+      max-width: 20px;
+      margin-left: 5px;
+    }
+
+    p{
+      font-size: 12px;
+      color: var(--gray-border);
+      text-transform: uppercase;
+    }
+  }
+
 }

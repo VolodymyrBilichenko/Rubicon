@@ -201,7 +201,16 @@ button {
   --gray-border: #939393;
   --header-bgd: linear-gradient(90deg, #1B1B1D 40.94%, #383E45 100%);
   --white-bgd: #F5F5F5;
-  --yellow: #FFCE1F
+  --yellow: #FFCE1F;
+  --yellow-opacity: #FFF7DA;
+  --yellow-rat: #CEA924;
+  --green: #488F60;
+  --yellow-2: #FFDB5F;
+  --red: #DF4723;
+  --red-opacity: #FEDDDD;
+  --blue: #3F6B9E;
+  --blue-opacity: #F1F7FF;
+  --bgd-recomend: #E7F6EC
 }
 body {
   margin: 0;
@@ -505,11 +514,16 @@ textarea {
   display: -ms-flexbox;
   display: flex
 }
-.schedule__date li {
+.schedule .schedule__date_li {
   padding: 5px 10px 10px;
   background: var(--white);
-  border-radius: 8px;
   border-bottom: 5px solid var(--border)
+}
+.schedule .schedule__date_li:first-child {
+  border-radius: 10px 0 0 10px
+}
+.schedule .schedule__date_li:last-child {
+  border-radius: 0 10px 10px 0
 }
 .schedule__date__departure {
   display: -webkit-box;
@@ -522,7 +536,7 @@ textarea {
 .schedule__date__departure p {
   font-size: 12px;
   color: var(--gray-border);
-  margin-right: 5px
+  margin-right: 4px
 }
 .schedule__date__departure .departure__places {
   font-size: 12px;
@@ -530,10 +544,411 @@ textarea {
   color: var(--gray-border);
   padding: 4px;
   border-radius: 50%;
-  background: var(--white-bgd)
+  background: var(--white-bgd);
+  margin-right: 0
 }
-.schedule__date__departure .departure__price {
+.schedule .departure__price {
   font-size: 10px;
   font-weight: 300;
   color: var(--gray-border)
+}
+.schedule .schedule__date_active {
+  border-bottom: 5px solid var(--yellow)
+}
+.schedule .schedule__date_active .schedule__date__departure p {
+  color: var(--black)
+}
+.schedule .schedule__date_active .departure__price {
+  color: var(--black)
+}
+.ticket {
+  padding: 20px 0 100px;
+  background: var(--white-bgd)
+}
+.ticket__list li {
+  padding: 15px;
+  border-radius: 8px;
+  background: var(--white);
+  -webkit-box-shadow: 0 0 10px 0 rgba(108,108,108,.4);
+  box-shadow: 0 0 10px 0 rgba(108,108,108,.4);
+  margin-bottom: 20px
+}
+.ticket__list li:last-child {
+  margin-bottom: 0
+}
+.ticket__list .ticket__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--white-bgd);
+  margin-bottom: 15px
+}
+.ticket__list .ticket__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center
+}
+.ticket__list .ticket__header p {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 140%
+}
+.ticket__list .ticket__logo {
+  padding: 5px;
+  background: var(--border);
+  border-radius: 50%;
+  margin-right: 5px
+}
+.ticket__list .ticket__logo img {
+  max-width: 20px
+}
+.ticket__list .ticket__rating {
+  margin-left: auto
+}
+.ticket__list .ticket__rating p {
+  padding: 8px 10px;
+  background: var(--yellow-opacity);
+  border-radius: 16.5px;
+  color: var(--yellow-rat);
+  font-size: 12px
+}
+.ticket__list .ticket__info__first {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 9px
+}
+.ticket__list .ticket__info__first:last-child {
+  margin-bottom: 0
+}
+.ticket__list .ticket__time {
+  margin-left: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column
+}
+.ticket__list .ticket__time h3 {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 140%
+}
+.ticket__list .ticket__time p {
+  font-size: 10px;
+  font-weight: 300;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: var(--gray-border);
+  margin-top: auto;
+  white-space: nowrap
+}
+.ticket__list .ticket__time p img {
+  max-width: 10px;
+  margin-right: 3px
+}
+.ticket__list .ticket__info {
+  margin-bottom: 15px
+}
+.ticket__list .time__opacity {
+  opacity: 0
+}
+.ticket__list .ticket__city {
+  margin-left: -14px
+}
+.ticket__list .ticket__city h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--black);
+  margin-bottom: 5px
+}
+.ticket__list .ticket__city img {
+  max-width: 17px;
+  margin-left: 3px
+}
+.ticket__list .ticket__city .ticket__city_mar {
+  margin-bottom: 0
+}
+.ticket__list .ticket__city p {
+  font-size: 12px;
+  font-weight: 300;
+  color: var(--gray-border);
+  margin-bottom: 25px
+}
+.ticket__list .ticket__arrival {
+  background: var(--border);
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px;
+  margin-bottom: 15px
+}
+.ticket__list .ticket__arrival img {
+  max-width: 20px;
+  margin-right: 5px
+}
+.ticket__list .ticket__arrival p {
+  font-size: 12px;
+  color: var(--black)
+}
+.ticket__list .ticket__graphic {
+  padding-top: 15px;
+  border-top: 1px solid var(--white-bgd);
+  margin-bottom: 15px
+}
+.ticket__list .graphic__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between
+}
+.ticket__list .graphic__lft {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center
+}
+.ticket__list .graphic__lft .graphic__calendar {
+  margin-right: 5px;
+  background: var(--white-bgd);
+  padding: 4px;
+  border-radius: 50%
+}
+.ticket__list .graphic__lft .graphic__calendar img {
+  max-width: 13px
+}
+.ticket__list .graphic__lft h3 {
+  font-size: 12px;
+  font-weight: 300;
+  color: var(--gray-border)
+}
+.ticket__list .graphic__lft h3 span {
+  font-size: 12px;
+  font-weight: 300;
+  color: var(--black)
+}
+.ticket__list .graphic__rht {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 5px
+}
+.ticket__list .graphic__rht p {
+  font-size: 12px;
+  font-weight: 300;
+  color: var(--black)
+}
+.ticket__list .graphic__item {
+  padding: 4px;
+  background: var(--white-bgd);
+  border-radius: 50%
+}
+.ticket__list .graphic__item img {
+  max-width: 13px
+}
+.ticket__list .details__places__people {
+  background: var(--white-bgd);
+  border-radius: 50%;
+  padding: 4px
+}
+.ticket__list .details__places__people img {
+  max-width: 14px
+}
+.ticket__list .details__places {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center
+}
+.ticket__list .details__places p {
+  font-size: 12px;
+  font-weight: 300;
+  color: var(--black);
+  white-space: nowrap;
+  margin-left: 5px
+}
+.ticket__list .ticket__details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-bottom: 15px;
+  border-bottom: 1px solid var(--white-bgd)
+}
+.ticket__list .details__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  max-width: 221px;
+  padding: 3.5px 54.5px;
+  background: var(--white-bgd);
+  margin-left: 15px;
+  border-radius: 8px;
+  font-size: 12px;
+  color: var(--gray-border)
+}
+.ticket__list .details__btn img {
+  max-width: 24px;
+  margin-left: 8px
+}
+.ticket__list .ticket__cost {
+  margin-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 8px
+}
+.ticket__list .ticket__cost h2 {
+  font-size: 20px;
+  color: var(--black)
+}
+.ticket__list .ticket__cost p {
+  font-size: 12px;
+  color: var(--green);
+  margin-left: 5px
+}
+.ticket__list .ticket__cost img {
+  max-width: 20px
+}
+.ticket__list .ticket__prepayment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center
+}
+.ticket__list .ticket__bron {
+  padding: 15px 25px;
+  background: var(--yellow);
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 7px;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: var(--black)
+}
+.ticket__list .ticket__posadka {
+  font-size: 12px;
+  color: var(--gray-border);
+  text-transform: uppercase;
+  text-align: center
+}
+.ticket__list .ticket__recomend {
+  padding-bottom: 15px;
+  border-bottom: 1px solid var(--white-bgd);
+  margin-bottom: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 5px;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap
+}
+.ticket__list .rubicon__recomend {
+  background: var(--yellow-2);
+  border-radius: 17px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 10px;
+  padding: 4.5px 7px
+}
+.ticket__list .rubicon__recomend img {
+  max-width: 15px;
+  margin-right: 5px
+}
+.ticket__list .rubicon__reis {
+  padding: 6px 9.5px;
+  background: var(--red-opacity);
+  border-radius: 17px
+}
+.ticket__list .rubicon__reis p {
+  color: var(--red);
+  font-size: 10px
+}
+.ticket__list .rubicon__fast {
+  padding: 6px 9.5px;
+  border-radius: 17px;
+  background: var(--blue-opacity)
+}
+.ticket__list .rubicon__fast p {
+  font-size: 10px;
+  color: var(--blue)
+}
+.ticket__list .rubicon__chip {
+  padding: 6px 9.5px;
+  border-radius: 17px;
+  background: var(--bgd-recomend)
+}
+.ticket__list .rubicon__chip p {
+  font-size: 10px;
+  color: var(--green)
+}
+.ticket__list .ticket__prepayment_fiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center
+}
+.ticket__list .ticket__prepayment_fiv img {
+  max-width: 20px;
+  margin-left: 5px
+}
+.ticket__list .ticket__prepayment_fiv p {
+  font-size: 12px;
+  color: var(--gray-border);
+  text-transform: uppercase
 }
