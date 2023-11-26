@@ -995,7 +995,8 @@ textarea {
   width: 100%;
   border-bottom: 1px solid var(--border);
   margin: 0 5px;
-  min-width: 20px
+  min-width: 20px;
+  margin-bottom: 4px
 }
 .prices__ticket .ptices__ticket_title {
   font-size: 16px;
