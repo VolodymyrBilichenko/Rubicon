@@ -1,17 +1,12 @@
 const swiper = new Swiper(".mySwiper", {
-    slidesPerView: 'auto',
-    spaceBetween: 10,
-
-    breakpoints: {
-        768: {
-            spaceBetween: 0,
-            enabled: false,
-        },
+    spaceBetween: 30,
+    navigation: {
+        nextEl: ".button-next",
+        prevEl: ".button-prev",
     },
 
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
+    breakpoints: {
+
     },
 });
 
