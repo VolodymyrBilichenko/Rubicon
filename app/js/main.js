@@ -4,17 +4,13 @@ const swiper = new Swiper(".mySwiper", {
         nextEl: ".button-next",
         prevEl: ".button-prev",
     },
-
-    breakpoints: {
-
-    },
 });
 
 // questions
 
 
 
-const questionsList = document.querySelectorAll('.questions__list');
+const questionsList = document.querySelectorAll('.questions__list li');
 
 questionsList.forEach((listItem) => {
     const listItemHeader = listItem.querySelector('.questions__list_header');
@@ -22,6 +18,8 @@ questionsList.forEach((listItem) => {
 
     listItemHeader.addEventListener('click', () => {
         const isActive = listItem.classList.contains('questions__list_active');
+
+        console.log(listItem)
 
         // Відкриваємо або закриваємо поточне питання
         if (!isActive) {
