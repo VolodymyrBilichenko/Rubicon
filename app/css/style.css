@@ -974,10 +974,16 @@ textarea {
   padding-bottom: 100px;
   background: var(--white-bgd)
 }
+@media screen and (min-width:768px) {
+  .prices {
+    padding-bottom: 150px
+  }
+}
 .prices__ticket {
   padding: 17px 13px;
   background: var(--white);
-  border-radius: 8px
+  border-radius: 8px;
+  width: 100%
 }
 .prices__ticket li {
   display: -webkit-box;
@@ -1012,6 +1018,32 @@ textarea {
   font-size: 16px;
   color: var(--black)
 }
+@media screen and (min-width:768px) {
+  .prices__ticket {
+    padding: 30px
+  }
+  .prices__ticket li {
+    margin-bottom: 20px
+  }
+  .prices__ticket li br {
+    display: none
+  }
+  .prices__ticket h3 {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 150%
+  }
+  .prices__ticket p {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal
+  }
+  .prices__ticket .ptices__ticket_title {
+    font-size: 24px;
+    margin-bottom: 5px
+  }
+}
 .about {
   padding-bottom: 100px;
   background: var(--white-bgd)
@@ -1020,6 +1052,9 @@ textarea {
   text-align: center;
   border-radius: 8px;
   margin-bottom: 30px
+}
+.about__inner .about__from_des {
+  display: none
 }
 .about__txt__description p {
   font-size: 14px;
@@ -1030,17 +1065,57 @@ textarea {
 .about__txt__description p:last-child {
   margin-bottom: 0
 }
+@media screen and (min-width:768px) {
+  .about__inner .about__from_des {
+    display: block;
+    max-width: 820px
+  }
+  .about__inner .about__from_mob {
+    display: none
+  }
+  .about__txt__description p {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: normal
+  }
+}
+@media screen and (min-width:1280px) {
+  .about {
+    padding-bottom: 150px
+  }
+  .about__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    gap: 40px
+  }
+  .about__inner img {
+    margin-bottom: 0
+  }
+  .about__inner br {
+    display: none
+  }
+}
 .flights {
   padding-bottom: 100px;
   background: var(--white-bgd)
 }
 .flights__main__ph {
   position: relative;
-  margin-bottom: 100px;
   background: var(--white-bgd)
 }
 .flights__main__ph img {
   border-radius: 5px
+}
+.flights__main__ph .from__des {
+  display: none
 }
 .flights__main__ph p {
   font-size: 20px;
@@ -1050,9 +1125,43 @@ textarea {
   left: 0;
   padding: 20px
 }
+@media screen and (min-width:768px) {
+  .flights {
+    padding-bottom: 150px
+  }
+  .flights .from__des {
+    display: block
+  }
+  .flights .from__mob {
+    display: none
+  }
+}
+@media screen and (min-width:1280px) {
+  .flights p {
+    padding: 50px;
+    max-width: 746px;
+    font-size: 36px
+  }
+}
 .routes {
   padding-bottom: 100px;
   background: var(--white-bgd)
+}
+@media screen and (min-width:768px) {
+  .routes {
+    padding-bottom: 150px
+  }
+}
+@media screen and (min-width:1280px) {
+  .routes__inner {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2,1fr);
+    -ms-grid-rows: (1fr)[2];
+    grid-template-rows: repeat(2,1fr);
+    gap: 20px
+  }
 }
 .prices__ticket_mar {
   margin-bottom: 20px
@@ -1060,13 +1169,67 @@ textarea {
 .prices__ticket_mar:last-child {
   margin-bottom: 0
 }
+@media screen and (min-width:1280px) {
+  .prices__ticket_mar {
+    margin-bottom: 0
+  }
+}
 .similar {
   padding-bottom: 100px;
   background: var(--white-bgd)
 }
+@media screen and (min-width:768px) {
+  .similar {
+    padding-bottom: 150px
+  }
+  .similar__inner {
+    background: var(--white);
+    border-radius: 8px;
+    padding: 30px
+  }
+  .similar__inner .prices__ticket {
+    padding: 0;
+    padding-bottom: 30px
+  }
+  .similar__inner .prices__ticket:last-child {
+    padding-bottom: 0;
+    padding-top: 30px
+  }
+  .similar .line {
+    border-bottom: 1px solid var(--border);
+    width: 100%
+  }
+}
+@media screen and (min-width:1280px) {
+  .similar__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+  }
+  .similar__inner .prices__ticket {
+    padding-right: 30px;
+    padding-bottom: 0
+  }
+  .similar__inner .prices__ticket:last-child {
+    padding-left: 30px;
+    padding-top: 0
+  }
+  .similar .line {
+    border-right: 1px solid var(--border);
+    border-bottom: none;
+    height: auto;
+    width: 1px
+  }
+}
 .questions {
   padding-bottom: 100px;
   background: var(--white-bgd)
+}
+.questions__asked_des {
+  display: none
+}
+.questions__head button {
+  display: none
 }
 .questions__all {
   display: -webkit-box;
@@ -1087,6 +1250,9 @@ textarea {
 .questions__list {
   max-height: 400px;
   overflow-y: scroll
+}
+.questions__list::-webkit-scrollbar {
+  visibility: visible
 }
 .questions__list_header {
   display: -webkit-box;
@@ -1161,9 +1327,112 @@ textarea {
   padding: 15px 25px;
   width: 100%;
   background: var(--yellow);
+  border: 1px solid var(--yellow);
   border-radius: 8px;
   font-size: 16px;
-  color: var(--black)
+  color: var(--black);
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease
+}
+.questions__ask:hover {
+  background: 0 0;
+  border: 1px solid var(--yellow)
+}
+@media screen and (min-width:768px) {
+  .questions {
+    padding-bottom: 150px
+  }
+  .questions li {
+    margin-bottom: 20px
+  }
+  .questions li:last-child {
+    margin-bottom: 0
+  }
+  .questions__all {
+    font-size: 24px;
+    margin-bottom: 20px
+  }
+  .questions__list_header {
+    padding: 0
+  }
+  .questions__list_header h3 {
+    font-size: 20px
+  }
+  .questions__list_header svg {
+    max-width: 20px;
+    height: 20px
+  }
+  .questions__list_body p {
+    font-size: 16px;
+    line-height: 150%
+  }
+  .questions__list_body span {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal
+  }
+}
+@media screen and (min-width:1280px) {
+  .questions__ask {
+    display: none
+  }
+  .questions__all_qu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 30px
+  }
+  .questions__head {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-bottom: 40px
+  }
+  .questions__head h2 {
+    margin-bottom: 0
+  }
+  .questions__head button {
+    display: block;
+    max-width: 217px;
+    margin-top: 0
+  }
+  .questions__inner {
+    display: none
+  }
+  .questions__asked_des {
+    display: block
+  }
+  .questions__asked_des li {
+    margin-bottom: 15px
+  }
+  .questions__asked_des li:last-child {
+    margin-bottom: 0
+  }
+  .questions__asked_des button {
+    font-size: 24px;
+    color: var(--gray-border);
+    padding: 15px;
+    text-align: start
+  }
+  .questions__asked_des .asked_des_active {
+    color: var(--black)
+  }
+  .questions__list {
+    width: 100%;
+    max-width: 1110px;
+    padding-left: 20px;
+    border-left: 1px solid var(--border);
+    max-height: none;
+    overflow-y: unset
+  }
 }
 .reviews {
   padding: 50px 0
@@ -1176,12 +1445,13 @@ textarea {
     padding: 100px 0
   }
 }
-@media screen and (min-width:1600px) {
+@media screen and (min-width:1280px) {
   .reviews .section__title_desc {
     display: none
   }
   .reviews .section__title_mob {
-    display: block
+    display: block;
+    max-width: 450px
   }
   .reviews__inner {
     display: -webkit-box;
@@ -1268,7 +1538,7 @@ textarea {
     line-height: 140%
   }
 }
-@media screen and (min-width:1600px) {
+@media screen and (min-width:1280px) {
   .reviews__slider_list {
     max-width: 820px
   }
@@ -1292,7 +1562,7 @@ textarea {
 .reviews__con_button .reviews__button img {
   max-width: 24px
 }
-@media screen and (min-width:1600px) {
+@media screen and (min-width:1280px) {
   .reviews__con_button {
     margin-top: auto
   }
