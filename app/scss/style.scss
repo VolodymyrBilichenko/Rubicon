@@ -391,6 +391,99 @@ select {
 .ticket {
   padding: 20px 0 100px;
   background: var(--white-bgd);
+
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  &__aside{
+    display: none;
+  }
+
+  @media screen and (min-width: 1280px){
+    &__aside{
+      display: block;
+      background: var(--white);
+      border-radius: 8px;
+      padding: 30px;
+
+      h3{
+        font-size: 24px;
+        color: var(--black);
+        margin-bottom: 30px;
+      }
+      .aside__config{
+        padding-bottom: 30px;
+        margin-bottom: 30px;
+        border-bottom: 1px solid var(--border);
+        &:last-child{
+          margin-bottom: 0;
+        }
+        .config__header{
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+        }
+        .config__header_active{
+          img{
+            transform: rotateX(180deg);
+          }
+        }
+        h4{
+          font-size: 20px;
+          color: var(--black);
+        }
+        img{
+          max-width: 24px;
+          margin-right: 10px;
+        }
+      }
+      .config__body{
+        margin-top: 20px;
+        li{
+          margin-bottom: 15px;
+          &:last-child{
+            margin-bottom: 0;
+          }
+        }
+        label{
+          display: flex;
+          justify-content: space-between;
+          font-size: 16px;
+          font-weight: 300;
+          line-height: 150%;
+          color: var(--black);
+        }
+        input{
+          display: none;
+          &:checked + span svg{
+            display: block;
+          }
+        }
+        span svg{
+          display: none;
+        }
+        span{
+          width: 20px;
+          height: 20px;
+          border-radius: 4px;
+          background: var(--white-bgd);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        &_title {
+          display: flex;
+          align-items: center;
+          img {
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
 }
 
 .ticket__list {
@@ -452,15 +545,45 @@ select {
   .ticket__info__first {
     display: flex;
     margin-bottom: 9px;
+    position: relative;
+
+    &:before{
+      content: '';
+      display: block;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      border: 1px solid var(--yellow);
+      background: transparent;
+      position: absolute;
+      top: 3px;
+    }
+    &:after{
+      content: '';
+      display: block;
+      width: 1px;
+      height: 100%;
+      border-radius: 50%;
+      background: var(--yellow);
+      position: absolute;
+      left: 4px;
+      top: 12px;
+    }
 
     &:last-child {
       margin-bottom: 0;
+
+      &:before{
+        background: var(--yellow);
+      }
+      &:after{
+        display: none;
+      }
     }
   }
 
   .ticket__time {
-    //min-height: 115px;
-    margin-left: 5px;
+    margin-left: 15px;
     display: flex;
     flex-direction: column;
 
@@ -688,10 +811,15 @@ select {
     width: 100%;
     border-radius: 8px;
     margin-bottom: 7px;
-
+    transition: all .3s ease;
     font-size: 14px;
     text-transform: uppercase;
     color: var(--black);
+    border: 1px solid var(--yellow);
+
+    &:hover{
+      background: transparent;
+    }
   }
 
   .ticket__posadka {
@@ -721,6 +849,11 @@ select {
     img {
       max-width: 15px;
       margin-right: 5px;
+    }
+
+    p{
+      font-size: 10px;
+      color: var(--black);
     }
   }
 
@@ -770,6 +903,81 @@ select {
       font-size: 12px;
       color: var(--gray-border);
       text-transform: uppercase;
+    }
+  }
+  @media screen and (min-width: 768px){
+    &{
+      .ticket__header p{
+        font-size: 18px;
+      }
+
+      .ticket__time {
+        h3{
+          font-size: 18px;
+        }
+        p{
+          font-size: 14px;
+        }
+      }
+
+      .ticket__city{
+        h2{
+          font-size: 20px;
+        }
+        p{
+          font-size: 16px;
+        }
+      }
+
+      .ticket__rating p{
+        font-size: 16px;
+      }
+      .ticket__arrival {
+        p{
+          font-size: 16px;
+        }
+        img{
+          max-width: 24px;
+        }
+      }
+      .ticket__arrival p{
+        font-size: 16px;
+      }
+      .ticket__arrival p{
+        font-size: 16px;
+      }
+      .graphic__lft .graphic__calendar img{
+        max-width: 17px;
+      }
+      .details__places__people img{
+        width: 17px;
+      }
+      .graphic__item img{
+        max-width: 17px;
+      }
+      .details__btn{
+        font-size: 16px;
+      }
+      .ticket__cost {
+        h2{
+          font-size: 24px;
+        }
+        p{
+          font-size: 16px;
+          white-space: nowrap;
+        }
+        img{
+          max-width: 24px;
+        }
+      }
+
+      .rubicon__recomend p,
+      .rubicon__reis p,
+      .rubicon__fast p,
+      .rubicon__chip p{
+        font-size: 14px;
+      }
+
     }
   }
 }

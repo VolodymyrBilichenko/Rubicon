@@ -7,9 +7,6 @@ const swiper = new Swiper(".mySwiper", {
 });
 
 // questions
-
-
-
 const questionsList = document.querySelectorAll('.questions__list li');
 
 questionsList.forEach((listItem) => {
@@ -32,3 +29,18 @@ questionsList.forEach((listItem) => {
     });
 });
 
+// header aside
+
+const configHeader = document.querySelector('.config__header')
+const configBody = document.querySelector('.config__body')
+configHeader.addEventListener('click', () => {
+    const isActive = configHeader.classList.contains('.config__header_active')
+
+    if (!isActive) {
+        configHeader.classList.add('config__header_active');
+        configBody.classList.add('config__body_active');
+    } else {
+        configHeader.classList.remove('config__header_active');
+        configBody.classList.remove('config__body_active');
+    }
+})
