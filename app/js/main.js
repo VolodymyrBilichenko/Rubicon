@@ -17,8 +17,6 @@ questionsList.forEach((listItem) => {
         const isActive = listItem.classList.contains('questions__list_active');
 
         console.log(listItem)
-
-        // Відкриваємо або закриваємо поточне питання
         if (!isActive) {
             listItem.classList.add('questions__list_active');
             listItemBody.classList.add('questions__body_active');
@@ -31,16 +29,20 @@ questionsList.forEach((listItem) => {
 
 // header aside
 
-const configHeader = document.querySelector('.config__header')
-const configBody = document.querySelector('.config__body')
-configHeader.addEventListener('click', () => {
-    const isActive = configHeader.classList.contains('.config__header_active')
+const configHeaders = document.querySelectorAll('.config__header');
+const configBodies = document.querySelectorAll('.config__body');
 
-    if (!isActive) {
-        configHeader.classList.add('config__header_active');
-        configBody.classList.add('config__body_active');
-    } else {
-        configHeader.classList.remove('config__header_active');
-        configBody.classList.remove('config__body_active');
-    }
-})
+// const configHeaders = document.querySelectorAll('.config__header');
+
+configHeaders.forEach((configHeader) => {
+    configHeader.addEventListener('click', () => {
+        const isActive = configHeader.classList.toggle('config__header_active');
+        const configBody = configHeader.nextElementSibling; // Знаходимо наступний елемент, який є config__body
+
+        if (isActive) {
+            configBody.classList.add('config__body_active');
+        } else {
+            configBody.classList.remove('config__body_active');
+        }
+    });
+});

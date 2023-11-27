@@ -477,7 +477,10 @@ textarea {
   -ms-flex-align: center;
   align-items: center;
   gap: 10px;
-  margin-bottom: 15px
+  margin-bottom: 15px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center
 }
 .schedule__filter li {
   background: var(--white);
@@ -505,6 +508,28 @@ textarea {
 .schedule__filter .filter__arrows {
   max-width: 27px
 }
+@media screen and (min-width:500px) {
+  .schedule__filter li {
+    width: 100%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center
+  }
+  .schedule__filter img {
+    margin-left: 0
+  }
+  .schedule__filter P {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 150%
+  }
+}
+@media screen and (min-width:1280px) {
+  .schedule__filter {
+    display: none
+  }
+}
 .schedule__filter_li {
   width: 100%;
   max-width: 170px
@@ -514,16 +539,57 @@ textarea {
   display: -ms-flexbox;
   display: flex
 }
-.schedule .schedule__date_li {
+@media screen and (min-width:1280px) {
+  .schedule__date {
+    display: none;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    gap: 10px
+  }
+}
+.schedule__date_li {
+  width: 100%;
   padding: 5px 10px 10px;
   background: var(--white);
-  border-bottom: 5px solid var(--border)
+  border-bottom: 5px solid var(--border);
+  cursor: pointer;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease
 }
-.schedule .schedule__date_li:first-child {
+.schedule__date_li:hover p {
+  color: var(--black)
+}
+.schedule__date_li:first-child {
   border-radius: 10px 0 0 10px
 }
-.schedule .schedule__date_li:last-child {
+.schedule__date_li:last-child {
   border-radius: 0 10px 10px 0
+}
+.schedule__date_li:hover {
+  border-bottom: 5px solid var(--yellow)
+}
+@media screen and (min-width:1280px) {
+  .schedule__date_li {
+    margin-bottom: 20px;
+    max-width: 400px;
+    border-radius: 8px;
+    padding: 20px;
+    border-bottom: 5px solid var(--yellow-rat);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+  }
+  .schedule__date_li:first-child {
+    border-radius: 8px
+  }
+  .schedule__date_li:last-child {
+    border-radius: 8px
+  }
 }
 .schedule__date__departure {
   display: -webkit-box;
@@ -536,29 +602,94 @@ textarea {
 .schedule__date__departure p {
   font-size: 12px;
   color: var(--gray-border);
-  margin-right: 4px
+  margin-right: 4px;
+  white-space: nowrap;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease
 }
-.schedule__date__departure .departure__places {
+.schedule__date__departure p:hover {
+  color: var(--black)
+}
+@media screen and (min-width:768px) {
+  .schedule__date__departure p {
+    font-size: 16px
+  }
+}
+.departure__places {
   font-size: 12px;
   font-weight: 300;
   color: var(--gray-border);
-  padding: 4px;
   border-radius: 50%;
   background: var(--white-bgd);
-  margin-right: 0
+  margin-right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  margin-left: auto
 }
-.schedule .departure__price {
+.departure__places_des {
+  display: none
+}
+@media screen and (min-width:768px) {
+  .departure__places {
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 140%
+  }
+}
+@media screen and (min-width:1280px) {
+  .departure__places {
+    width: 47px;
+    height: 47px;
+    font-size: 16px;
+    display: none
+  }
+  .departure__places_des {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+  }
+}
+.departure__price {
   font-size: 10px;
   font-weight: 300;
   color: var(--gray-border)
 }
-.schedule .schedule__date_active {
+@media screen and (min-width:768px) {
+  .departure__price {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 140%
+  }
+}
+.schedule__date_active {
   border-bottom: 5px solid var(--yellow)
 }
-.schedule .schedule__date_active .schedule__date__departure p {
+.schedule__date_active .departure__places {
   color: var(--black)
 }
-.schedule .schedule__date_active .departure__price {
+.schedule__date_active .schedule__date__departure p {
+  color: var(--black)
+}
+@media screen and (min-width:1280px) {
+  .schedule__date_active {
+    border-bottom: 5px solid var(--yellow)
+  }
+}
+.schedule__date_active .departure__price {
   color: var(--black)
 }
 .ticket {
@@ -577,103 +708,140 @@ textarea {
 .ticket__aside {
   display: none
 }
+.ticket .schedule__date {
+  display: none
+}
+.ticket .ticket__rht {
+  width: 100%
+}
+.ticket .ticket__aside {
+  background: var(--white);
+  border-radius: 8px;
+  padding: 30px
+}
+.ticket .ticket__aside h3 {
+  font-size: 24px;
+  color: var(--black);
+  margin-bottom: 30px
+}
+.ticket .ticket__aside .aside__config {
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid var(--border)
+}
+.ticket .ticket__aside .aside__config:last-child {
+  margin-bottom: 0;
+  border-bottom: none
+}
+.ticket .ticket__aside .aside__config .config__header {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center
+}
+.ticket .ticket__aside .aside__config .config__header img {
+  -webkit-transform: rotateX(180deg);
+  transform: rotateX(180deg)
+}
+.ticket .ticket__aside .aside__config .config__header_active img {
+  -webkit-transform: rotateX(360deg);
+  transform: rotateX(360deg)
+}
+.ticket .ticket__aside .aside__config h4 {
+  font-size: 20px;
+  color: var(--black);
+  text-align: left;
+  white-space: nowrap
+}
+.ticket .ticket__aside .aside__config img {
+  max-width: 24px;
+  margin-right: 10px;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease
+}
+.ticket .ticket__aside .config__body {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease
+}
+.ticket .ticket__aside .config__body li {
+  margin-bottom: 15px
+}
+.ticket .ticket__aside .config__body li:last-child {
+  margin-bottom: 0
+}
+.ticket .ticket__aside .config__body label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 150%;
+  color: var(--black);
+  cursor: pointer
+}
+.ticket .ticket__aside .config__body input {
+  display: none
+}
+.ticket .ticket__aside .config__body input:checked + span svg {
+  display: block
+}
+.ticket .ticket__aside .config__body span svg {
+  display: none
+}
+.ticket .ticket__aside .config__body span {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  background: var(--white-bgd);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center
+}
+.ticket .ticket__aside .config__body_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center
+}
+.ticket .ticket__aside .config__body_title img {
+  margin-right: 10px
+}
+.ticket .ticket__aside .config__body_active {
+  opacity: 1;
+  max-height: 150px;
+  margin-top: 20px
+}
 @media screen and (min-width:1280px) {
   .ticket__aside {
-    display: block;
-    background: var(--white);
-    border-radius: 8px;
-    padding: 30px
-  }
-  .ticket__aside h3 {
-    font-size: 24px;
-    color: var(--black);
-    margin-bottom: 30px
-  }
-  .ticket__aside .aside__config {
-    padding-bottom: 30px;
-    margin-bottom: 30px;
-    border-bottom: 1px solid var(--border)
-  }
-  .ticket__aside .aside__config:last-child {
-    margin-bottom: 0
-  }
-  .ticket__aside .aside__config .config__header {
-    cursor: pointer;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center
-  }
-  .ticket__aside .aside__config .config__header_active img {
-    -webkit-transform: rotateX(180deg);
-    transform: rotateX(180deg)
-  }
-  .ticket__aside .aside__config h4 {
-    font-size: 20px;
-    color: var(--black)
-  }
-  .ticket__aside .aside__config img {
-    max-width: 24px;
-    margin-right: 10px
-  }
-  .ticket__aside .config__body {
-    margin-top: 20px
-  }
-  .ticket__aside .config__body li {
-    margin-bottom: 15px
-  }
-  .ticket__aside .config__body li:last-child {
-    margin-bottom: 0
-  }
-  .ticket__aside .config__body label {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 150%;
-    color: var(--black)
-  }
-  .ticket__aside .config__body input {
-    display: none
-  }
-  .ticket__aside .config__body input:checked + span svg {
     display: block
   }
-  .ticket__aside .config__body span svg {
-    display: none
-  }
-  .ticket__aside .config__body span {
-    width: 20px;
-    height: 20px;
-    border-radius: 4px;
-    background: var(--white-bgd);
+  .ticket .schedule__date {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center
+    display: flex
   }
-  .ticket__aside .config__body_title {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center
-  }
-  .ticket__aside .config__body_title img {
-    margin-right: 10px
-  }
+}
+.ticket__list {
+  width: 100%
 }
 .ticket__list li {
   padding: 15px;
