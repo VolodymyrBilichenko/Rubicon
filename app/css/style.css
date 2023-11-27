@@ -994,12 +994,18 @@ textarea {
 .prices__ticket li:last-child {
   margin-bottom: 0
 }
-.prices__ticket h3 {
+.prices__ticket a {
   font-size: 14px;
   font-weight: 300;
   line-height: 140%;
   color: var(--black);
-  white-space: nowrap
+  white-space: nowrap;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease
+}
+.prices__ticket a:hover {
+  color: var(--yellow-rat)
 }
 .prices__ticket p {
   font-size: 12px;
@@ -1028,7 +1034,7 @@ textarea {
   .prices__ticket li br {
     display: none
   }
-  .prices__ticket h3 {
+  .prices__ticket a {
     font-size: 16px;
     font-weight: 300;
     line-height: 150%
