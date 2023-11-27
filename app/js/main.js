@@ -30,9 +30,7 @@ questionsList.forEach((listItem) => {
 // header aside
 
 const configHeaders = document.querySelectorAll('.config__header');
-const configBodies = document.querySelectorAll('.config__body');
 
-// const configHeaders = document.querySelectorAll('.config__header');
 
 configHeaders.forEach((configHeader) => {
     configHeader.addEventListener('click', () => {
@@ -46,3 +44,20 @@ configHeaders.forEach((configHeader) => {
         }
     });
 });
+
+//sort
+
+const configSorts = document.querySelectorAll('.input__head')
+
+configSorts.forEach((configSort) => {
+    configSort.addEventListener('click', () => {
+        const isActive = configSort.classList.toggle('input__head_active');
+        const configBody = configSort.nextElementSibling
+
+        if (isActive) {
+           configBody.classList.add('input__body_active');
+        } else {
+            configBody.classList.remove('input__body_active');
+        }
+    })
+})

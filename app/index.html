@@ -18,7 +18,15 @@
 <header class="header">
     <div class="container">
         <div class="header__inner">
-            <img src="img/Logo_mobile.svg">
+            <div class="header__translate">
+                <img class="header__logo" src="img/Logo_mobile.svg">
+                <div class="translate__lang">
+                        <div class="slideThree">
+                            <input type="checkbox" value="None" id="slideThree" name="check" checked />
+                            <label for="slideThree"></label>
+                        </div>
+                </div>
+            </div>
             <ul class="header__social">
                 <li>
                     <a href="#">
@@ -41,6 +49,35 @@
                     </a>
                 </li>
             </ul>
+            <div class="header__social_des">
+                <ul class="social__des_tel">
+                    <li>
+                        <a href="tel:+380978764512">
+                            <img src="img/call_des.svg" alt="icon">
+                            +38 097 876 4512
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tel:+380978764512">
+                            <img src="img/call_des.svg" alt="icon">
+                            +38 097 876 4512
+                        </a>
+                    </li>
+                </ul>
+                <ul class="social__des_but">
+                    <li>
+                        <button type="button">
+                            <img src="img/support.svg" alt="icon">
+                            Підтримка
+                        </button>
+                    </li>
+                    <li class="des__but_black">
+                        <button type="button">
+                            Особистий кабінет
+                        </button>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 </header>
@@ -55,9 +92,66 @@
                 <form class="banner__form">
                     <input type="text" placeholder="Київ - Львів">
                     <div class="banner__form_date">
-                        <input type="date" name="date" id="myDate">
+                        <div class="form__where">
+                            <div class="form__where_head">
+                                <p>
+                                    <img src="img/location.svg" alt="icon">
+                                    Звідки
+                                </p>
+                                <h3>
+                                    Київ, Україна
+                                </h3>
+                                <div class="swap">
+                                    <img src="img/swap.svg" alt="icon">
+                                </div>
+                            </div>
+                            <div class="form__where_body"></div>
+                        </div>
+                        <div class="form__where">
+                            <div class="form__where_head">
+                                <p>
+                                    <img src="img/location.svg" alt="icon">
+                                    Куди
+                                </p>
+                                <h3>
+                                    Варшава, Польща
+                                </h3>
+                            </div>
+                            <div class="form__where_body"></div>
+                        </div>
+                        <div class="form__where">
+                            <div class="form__where_head">
+                                <p>
+                                    <img src="img/calendar-ds.svg" alt="icon">
+                                    Дата поїздки
+                                </p>
+                                <h3>
+                                    10.07.2023
+                                </h3>
+                            </div>
+                            <div class="form__where_body"></div>
+                        </div>
+                        <div class="form__where">
+                            <div class="form__where_head">
+                                <p>
+                                    <img src="img/passagers-ds.svg" alt="icon">
+                                    Пасажири
+                                </p>
+                                <h3>
+                                    1 Дорослий, 1 дитина, тварина 5 кг
+                                </h3>
+                            </div>
+                            <div class="form__where_body"></div>
+                        </div>
+                        <div class="form__where">
+                            <button type="button">
+                                Знайти квитки
+                                <img src="img/arrow-rht.svg" alt="icon">
+                            </button>
+                        </div>
+                        <input class="" type="date" name="date" id="myDate">
                         <div class="banner__form_passenger">
-                            <button>
+                            <button form_passenger_header>
                                 <img src="img/passagers.svg">
                                 <p class="passenger__txt">
                                     4 пасажири
@@ -84,21 +178,31 @@
     <section class="schedule">
         <div class="container">
             <div class="schedule__inner">
-                <h2>
-                    Розклад автобусу Київ — Варшава
-                </h2>
-                <div class="schedule__reverse">
-                    <div class="schedule__reverse_con">
-                        <h3>
-                            Зворотній напрямок:
-                        </h3>
-                        <p>
-                            Автобуси Варшава — Київ
-                        </p>
+                <div class="schedule__conect">
+                    <div class="shedule__connect_inner">
+                        <div class="breadcrumbs">
+                            <a href="#">
+                                Квитки на автобус
+                            </a>
+                            <span>/ Розклад</span>
+                        </div>
+                    <h2>
+                        Розклад автобусу Київ — Варшава
+                    </h2>
                     </div>
-                    <button type="button" class="schedule__arrow">
-                        <img src="img/arrow-right.svg">
-                    </button>
+                    <div class="schedule__reverse">
+                        <div class="schedule__reverse_con">
+                            <h3>
+                                Зворотній напрямок:
+                            </h3>
+                            <p>
+                                Автобуси Варшава — Київ
+                            </p>
+                        </div>
+                        <button type="button" class="schedule__arrow">
+                            <img src="img/arrow-right.svg">
+                        </button>
+                    </div>
                 </div>
                 <ul class="schedule__filter">
                     <li>
@@ -474,6 +578,55 @@
                     </div>
                 </div>
                 <div class="ticket__rht">
+                    <div class="ticket__search">
+                        <h3>
+                            Знайдено 3 автобуси
+                        </h3>
+                        <div class="ticket__sort">
+                            <div class="ticket__sort_item">
+                                <p class="ticket__sort_money">
+                                    Валюта
+                                </p>
+                                <div class="ticket__sort_input">
+                                    <div class="input__head">
+                                        <p>
+                                            Гривня, UAH
+                                        </p>
+                                        <img src="img/arrow-down.svg" alt="icon">
+                                    </div>
+                                    <div class="input__body">
+                                        <p>
+                                            USD
+                                        </p>
+                                        <p>
+                                            EUR
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ticket__sort_item">
+                                <p class="ticket__sort_money">
+                                    Сортувати за
+                                </p>
+                                <div class="ticket__sort_input ticket__sort_item_width">
+                                    <div class="input__head">
+                                        <p>
+                                            Популярністю
+                                        </p>
+                                        <img src="img/arrow-down.svg" alt="icon">
+                                    </div>
+                                    <div class="input__body">
+                                        <p>
+                                            Швидкісь
+                                        </p>
+                                        <p>
+                                            Дата
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <ul class="schedule__date">
                         <li class="schedule__date_li">
                             <div class="schedule__li_con">
