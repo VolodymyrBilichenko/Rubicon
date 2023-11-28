@@ -2148,6 +2148,9 @@ textarea {
   .prices {
     padding-bottom: 150px
   }
+  .prices .section__title_st_citytocountry {
+    max-width: 771px
+  }
 }
 .prices__ticket {
   padding: 17px 13px;
