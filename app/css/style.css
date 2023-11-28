@@ -1713,7 +1713,7 @@ textarea {
   -ms-flex-align: center;
   align-items: center;
   font-size: 10px;
-  padding: 4.5px 7px
+  padding: 8px 10px
 }
 .ticket__list .rubicon__recomend img {
   max-width: 15px;
@@ -1723,17 +1723,45 @@ textarea {
   font-size: 10px;
   color: var(--black)
 }
+@media screen and (min-width:1280px) {
+  .ticket__list .rubicon__recomend p {
+    display: none
+  }
+  .ticket__list .rubicon__recomend img {
+    margin-right: 0
+  }
+}
 .ticket__list .rubicon__reis {
-  padding: 6px 9.5px;
+  padding: 8px 10px;
   background: var(--red-opacity);
-  border-radius: 17px
+  border-radius: 17px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center
 }
 .ticket__list .rubicon__reis p {
   color: var(--red);
   font-size: 10px
 }
+.ticket__list .rubicon__reis svg {
+  max-width: 15px;
+  fill: var(--red);
+  display: none;
+  margin-left: 5px
+}
+@media screen and (min-width:1280px) {
+  .ticket__list .rubicon__reis svg {
+    display: block
+  }
+  .ticket__list .rubicon__reis span {
+    display: none
+  }
+}
 .ticket__list .rubicon__fast {
-  padding: 6px 9.5px;
+  padding: 8px 10px;
   border-radius: 17px;
   background: var(--blue-opacity)
 }
@@ -1742,7 +1770,7 @@ textarea {
   color: var(--blue)
 }
 .ticket__list .rubicon__chip {
-  padding: 6px 9.5px;
+  padding: 8px 10px;
   border-radius: 17px;
   background: var(--bgd-recomend)
 }
