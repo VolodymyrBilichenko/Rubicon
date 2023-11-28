@@ -336,15 +336,18 @@ textarea {
 .header .slide__lang {
   background: var(--white);
   border-radius: 30px;
-  padding: 7px 5px
+  padding: 7px 5px;
+  cursor: pointer
 }
 .header .slide__lang input {
-  display: none
+  display: none;
+  cursor: pointer
 }
 .header .slide__lang label {
   font-size: 14px;
   color: var(--gray-border);
-  padding: 8px 10px
+  padding: 8px 10px;
+  cursor: pointer
 }
 .header .slide__lang input:checked + label {
   color: var(--black);
@@ -694,6 +697,30 @@ textarea {
     padding: 14px 10px;
     height: 78px
   }
+}
+.llide__lang {
+  background: var(--white);
+  border-radius: 30px;
+  padding: 7px 5px;
+  cursor: pointer
+}
+.llide__lang input {
+  display: none;
+  cursor: pointer
+}
+.llide__lang label {
+  font-size: 14px;
+  color: var(--gray-border);
+  padding: 8px 10px;
+  cursor: pointer
+}
+.llide__lang input:checked + label {
+  color: var(--black);
+  background: var(--yellow);
+  border-radius: 30px;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease
 }
 .breadcrumbs {
   display: -webkit-box;
@@ -3270,4 +3297,7 @@ textarea {
 }
 .schedule_st {
   padding: 0
+}
+.city {
+  padding: 50px 0
 }

@@ -161,13 +161,16 @@ select {
     background: var(--white);
     border-radius: 30px;
     padding: 7px 5px;
+    cursor: pointer;
     input{
       display: none;
+      cursor: pointer;
     }
     label{
       font-size: 14px;
       color: var(--gray-border);
       padding: 8px 10px;
+      cursor: pointer;
     }
     input:checked + label {
       color: var(--black);
@@ -503,6 +506,29 @@ select {
         height: 78px;
       }
     }
+  }
+}
+
+.llide__lang{
+  background: var(--white);
+  border-radius: 30px;
+  padding: 7px 5px;
+  cursor: pointer;
+  input{
+    display: none;
+    cursor: pointer;
+  }
+  label{
+    font-size: 14px;
+    color: var(--gray-border);
+    padding: 8px 10px;
+    cursor: pointer;
+  }
+  input:checked + label {
+    color: var(--black);
+    background: var(--yellow);
+    border-radius: 30px;
+    transition: all .3s ease;
   }
 }
 
@@ -3199,4 +3225,8 @@ select {
 
 .schedule_st{
   padding: 0;
+}
+
+.city{
+  padding: 50px 0;
 }

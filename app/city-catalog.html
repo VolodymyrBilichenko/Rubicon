@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Project</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="Website">
+    <meta name="keywords" content="Website">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <!-- ** STYLE ** -->
+    <link rel="stylesheet" href="./fonts/stylesheet.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="container">
+        <div class="header__inner">
+            <div class="header__translate">
+                <img class="header__logo" src="img/Logo_mobile.svg">
+                <div class="translate__lang">
+                    <div class="slide__lang">
+                        <input type="radio" id="sl-1" name="check" checked/>
+                        <label for="sl-1">Укр</label>
+
+                        <input type="radio" id="sl-2" name="check"/>
+                        <label for="sl-2">Англ</label>
+                    </div>
+                </div>
+            </div>
+            <ul class="header__social">
+                <li>
+                    <a href="#">
+                        <img src="img/Viber.svg">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/Telegram.svg">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/header_call.svg">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/account_logo.svg">
+                    </a>
+                </li>
+            </ul>
+            <div class="header__social_des">
+                <ul class="social__des_tel">
+                    <li>
+                        <a href="tel:+380978764512">
+                            <img src="img/call_des.svg" alt="icon">
+                            +38 097 876 4512
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tel:+380978764512">
+                            <img src="img/call_des.svg" alt="icon">
+                            +38 097 876 4512
+                        </a>
+                    </li>
+                </ul>
+                <ul class="social__des_but">
+                    <li>
+                        <button type="button">
+                            <img src="img/support.svg" alt="icon">
+                            Підтримка
+                        </button>
+                    </li>
+                    <li class="des__but_black">
+                        <button type="button">
+                            Особистий кабінет
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main>
+    <section class="banner">
+        <div class="container">
+            <div class="banner__inner">
+                <h1>
+                    Квитки на автобус Київ — Варшава
+                </h1>
+                <form class="banner__form">
+                    <input type="text" placeholder="Київ - Львів">
+                    <div class="banner__form_date">
+                        <div class="form__where">
+                            <div class="form__where_head">
+                                <p>
+                                    <img src="img/location.svg" alt="icon">
+                                    Звідки
+                                </p>
+                                <h3>
+                                    Київ, Україна
+                                </h3>
+                                <div class="swap">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                        <path d="M6.825 20L2 15.175L6.825 10.35L7.875 11.4L4.85 14.425H12.75V15.925H4.85L7.875 18.95L6.825 20ZM17.175 13.65L16.125 12.6L19.15 9.575H11.25V8.075H19.15L16.125 5.05L17.175 4L22 8.825L17.175 13.65Z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="form__where_body"></div>
+                        </div>
+                        <div class="form__where">
+                            <div class="form__where_head">
+                                <p>
+                                    <img src="img/location.svg" alt="icon">
+                                    Куди
+                                </p>
+                                <h3>
+                                    Варшава, Польща
+                                </h3>
+                            </div>
+                            <div class="form__where_body"></div>
+                        </div>
+                        <div class="form__where">
+                            <div class="form__where_head">
+                                <p>
+                                    <img src="img/calendar-ds.svg" alt="icon">
+                                    Дата поїздки
+                                </p>
+                                <h3>
+                                    10.07.2023
+                                </h3>
+                            </div>
+                            <div class="form__where_body"></div>
+                        </div>
+                        <div class="form__where">
+                            <div class="form__where_head">
+                                <p>
+                                    <img src="img/passagers-ds.svg" alt="icon">
+                                    Пасажири
+                                </p>
+                                <h3>
+                                    1 Дорослий, 1 дитина, тварина 5 кг
+                                </h3>
+                            </div>
+                            <div class="form__where_body"></div>
+                        </div>
+                        <div class="form__where">
+                            <button type="button">
+                                Знайти квитки
+                                <img src="img/arrow-rht.svg" alt="icon">
+                            </button>
+                        </div>
+                        <input class="" type="date" name="date" id="myDate">
+                        <div class="banner__form_passenger">
+                            <button form_passenger_header>
+                                <img src="img/passagers.svg">
+                                <p class="passenger__txt">
+                                    4 пасажири
+                                </p>
+                            </button>
+                            <div class="form_passenger_body">
+                                <p class="passenger__txt passenger__txt_margin">
+                                    1 пасажир
+                                </p>
+                                <p class="passenger__txt passenger__txt_margin">
+                                    2 пасажири
+                                </p>
+                                <p class="passenger__txt passenger__txt_margin">
+                                    3 пасажири
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="schedule">
+        <div class="container">
+            <div class="schedule__inner">
+                <div class="schedule__conect">
+                    <div class="shedule__connect_inner">
+                        <div class="breadcrumbs">
+                            <a href="#">
+                                Автобуси
+                            </a>
+                            <span>/ Міста</span>
+                        </div>
+                        <h2>
+                            Оберіть місто
+                        </h2>
+                        <div class="translate__lang">
+                            <div class="llide__lang">
+                                <input type="radio" id="ll-1" name="check" checked/>
+                                <label for="ll-1">Укр</label>
+
+                                <input type="radio" id="ll-2" name="check"/>
+                                <label for="ll-2">Англ</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="city">
+        <div class="container">
+            <h1 class="city__title">
+                А Б В Г Ґ Д Е Є Ж З И І Ї Й К Л М Н О П Р С Т У Ф Х Ц Ч Ш Щ Ь Ю Я
+            </h1>
+            <div class="city__all">
+                <div class="all__head">
+
+                </div>
+                <div class="city__all__list">
+                    <li>
+                        <ul class="all__list_named">
+                            <li>
+                                Антонівці
+                            </li>
+                            <li>
+                                Антоніни
+                            </li>
+                            <li>
+                                Арциз
+                            </li>
+                        </ul>
+                    </li>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <img class="footer__logo" src="img/footer-logo.svg">
+        <div class="footer__inner">
+            <ul class="footer__city">
+                <li>
+                    <div class="footer__city_head">
+                        <h3>
+                            Країни
+                        </h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36">
+                            <path d="M25.3875 12.9383L27 14.5508L18 23.5508L9 14.5883L10.6125 12.9758L18 20.3633L25.3875 12.9383Z"/>
+                        </svg>
+                    </div>
+                    <ul class="footer__city_body">
+                        <li>
+                            <a href="#">
+                                Чехія
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Молдова
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Польща
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Румунія
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Словаччина
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Україна
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>
+                                    Усі країни
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="footer__city_head">
+                        <h3>
+                            Міста
+                        </h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36">
+                            <path d="M25.3875 12.9383L27 14.5508L18 23.5508L9 14.5883L10.6125 12.9758L18 20.3633L25.3875 12.9383Z"/>
+                        </svg>
+                    </div>
+                    <ul class="footer__city_body">
+                        <li>
+                            <a href="#">
+                                Київ
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Одеса
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Дніпро
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Львів
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Харків
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Україна
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>
+                                    Усі міста
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="footer__city_head">
+                        <h3>
+                            Напрямки
+                        </h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36">
+                            <path d="M25.3875 12.9383L27 14.5508L18 23.5508L9 14.5883L10.6125 12.9758L18 20.3633L25.3875 12.9383Z"/>
+                        </svg>
+                    </div>
+                    <ul class="footer__city_body">
+                        <li>
+                            <a href="#">
+                                Київ - Одеса
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Київ - Львів
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Одеса - Київ
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Київ - Одеса
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Дніпро - Київ
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Львів - Київ
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>
+                                    Усі напрямки
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="footer__city_head">
+                        <h3>
+                            Станції
+                        </h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36">
+                            <path d="M25.3875 12.9383L27 14.5508L18 23.5508L9 14.5883L10.6125 12.9758L18 20.3633L25.3875 12.9383Z"/>
+                        </svg>
+                    </div>
+                    <ul class="footer__city_body">
+                        <li>
+                            <a href="#">
+                                Львов, автовокзал, ул. Стрыйская, 109
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Варшава, Автовозкал "Восточный", Любельская, 22
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Киев, Железнодорожный вокзал, Петлюры, 22
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Краков, Автовокзал, ул. Босяцкая, 18
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Ужгород, автовокзал, ул. Станционная, 2
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Кошице, автовокзал, пл. Станичная, 9
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>
+                                    Усі станції
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="footer__about">
+                <li>
+                    <a href="#">Про нас</a>
+                </li>
+                <li>
+                    <a href="#">Підтримка</a>
+                </li>
+                <li>
+                    <a href="#">Співпраця</a>
+                </li>
+                <li>
+                    <a href="#">Блог</a>
+                </li>
+            </ul>
+            <div class="footer__social_con">
+                <ul class="footer__social">
+                    <li>
+                        <a href="tel:+380 (097) 470-44-77">
+                            <img src="img/footer-phone.svg">
+                            +380 (097) 470-44-77
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tel:+380 (097) 470-44-77">
+                            <img src="img/footer-phone.svg">
+                            +380 (097) 470-44-77
+                        </a>
+                    </li>
+                </ul>
+                <ul class="footer__media">
+                    <li>
+                        <a href="#">
+                            <img src="img/viber-footer.svg">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/whatsapp.svg">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/telegram-footer.svg">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <ul class="footer__politic_des">
+            <li>
+                <a href="#">
+                    Політика конфіденційності
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    Договір про публічну оферту
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    Made by <span>Webnauts Pro</span>💙
+                </a>
+            </li>
+        </ul>
+    </div>
+</footer>
+
+
+<!-- swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<!-- main JS -->
+<script src="js/app.min.js"></script>
+</body>
+
+</html>
