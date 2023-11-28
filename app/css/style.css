@@ -290,7 +290,8 @@ textarea {
 }
 .header {
   background: var(--header-bgd);
-  padding-top: 20px
+  padding-top: 20px;
+  margin-bottom: -1px
 }
 .header__inner {
   display: -webkit-box;
@@ -326,44 +327,26 @@ textarea {
 .header .translate__lang {
   margin-left: 20px
 }
-.header .translate__lang .slideThree {
-  width: 160px;
-  height: 26px;
-  background: #fcfff4;
-  margin: 20px auto;
-  position: relative;
-  border-radius: 50px;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.5),0 1px 0 rgba(255,255,255,.2);
-  box-shadow: inset 0 1px 1px rgba(0,0,0,.5),0 1px 0 rgba(255,255,255,.2);
-  overflow: hidden
+.header .slide__lang {
+  background: var(--white);
+  border-radius: 30px;
+  padding: 7px 5px
 }
-.header .translate__lang .slideThree label {
-  display: block;
-  width: 80px;
-  height: 26px;
-  cursor: pointer;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  background: #333;
-  border-radius: 50px;
-  -webkit-transition: all .4s ease;
-  -o-transition: all .4s ease;
-  transition: all .4s ease;
-  -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,.3);
-  box-shadow: 0 2px 5px 0 rgba(0,0,0,.3);
-  color: #fcfff4;
-  line-height: 26px;
-  text-align: center
+.header .slide__lang input {
+  display: none
 }
-.header .translate__lang .slideThree input[type=checkbox] {
-  visibility: hidden
+.header .slide__lang label {
+  font-size: 14px;
+  color: var(--gray-border);
+  padding: 8px 10px
 }
-.header .translate__lang .slideThree input[type=checkbox]:checked + label {
-  left: 80px;
-  background: #333;
-  color: #fcfff4
+.header .slide__lang input:checked + label {
+  color: var(--black);
+  background: var(--yellow);
+  border-radius: 30px;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease
 }
 .header .social__des_tel {
   display: -webkit-box;
