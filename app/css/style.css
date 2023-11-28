@@ -325,7 +325,13 @@ textarea {
   align-items: center
 }
 .header .translate__lang {
-  margin-left: 20px
+  margin-left: 20px;
+  display: none
+}
+@media screen and (min-width:1280px) {
+  .header .translate__lang {
+    display: block
+  }
 }
 .header .slide__lang {
   background: var(--white);
