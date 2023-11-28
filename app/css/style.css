@@ -2139,6 +2139,9 @@ textarea {
   .section__title_width {
     max-width: 771px
   }
+  .section__title_width_2 {
+    max-width: 560px
+  }
 }
 .prices {
   padding-bottom: 100px;
