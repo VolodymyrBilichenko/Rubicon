@@ -391,7 +391,7 @@ textarea {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 15px 25px;
+  padding: 12px 25px;
   background: var(--white);
   border-radius: 8px;
   font-size: 16px;
@@ -2135,6 +2135,9 @@ textarea {
     line-height: normal;
     margin-bottom: 40px;
     max-width: 950px
+  }
+  .section__title_width {
+    max-width: 771px
   }
 }
 .prices {

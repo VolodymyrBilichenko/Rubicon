@@ -202,7 +202,7 @@ select {
     button {
       display: flex;
       align-items: center;
-      padding: 15px 25px;
+      padding: 12px 25px;
       background: var(--white);
       border-radius: 8px;
       font-size: 16px;
@@ -1980,6 +1980,9 @@ select {
       line-height: normal;
       margin-bottom: 40px;
       max-width: 950px;
+    }
+    &_width{
+      max-width: 771px;
     }
   }
 
