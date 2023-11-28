@@ -713,7 +713,8 @@ textarea {
   font-style: normal;
   font-weight: 300;
   line-height: 140%;
-  color: var(--yellow-rat)
+  color: var(--yellow-rat);
+  margin-right: 5px
 }
 @media screen and (min-width:1280px) {
   .breadcrumbs {
@@ -2142,6 +2143,9 @@ textarea {
   .section__title_width_2 {
     max-width: 560px
   }
+  .section__title_mar {
+    margin-bottom: 0
+  }
 }
 .prices {
   padding-bottom: 100px;
@@ -3125,4 +3129,103 @@ textarea {
   .footer__city_body a:last-child {
     white-space: nowrap
   }
+}
+.schedule__back {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center
+}
+.schedule__back:hover svg {
+  fill: var(--yellow)
+}
+.schedule__back__but {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid var(--gray-border);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center
+}
+.schedule__back__but svg {
+  fill: var(--black);
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease
+}
+.schedule__back p {
+  margin-left: 15px;
+  font-size: 16px;
+  color: var(--black)
+}
+.stations {
+  background: var(--white-bgd);
+  padding-bottom: 50px;
+  padding-top: 20px
+}
+.stations__all__lists {
+  padding: 15px;
+  background: var(--white);
+  border-radius: 8px
+}
+.stations__list {
+  margin-bottom: 15px
+}
+.stations__list:last-child {
+  margin-bottom: 0
+}
+.stations__list li {
+  margin-bottom: 15px;
+  width: 100%;
+  max-width: 460px
+}
+.stations__list li:last-child {
+  margin-bottom: 0
+}
+.stations__list a {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 140%;
+  color: var(--black);
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease
+}
+.stations__list a:hover {
+  color: var(--yellow)
+}
+@media screen and (min-width:768px) {
+  .stations {
+    padding-bottom: 150px
+  }
+  .stations__list a {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal
+  }
+}
+@media screen and (min-width:1280px) {
+  .stations__all__lists {
+    padding: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    gap: 50px
+  }
+}
+.schedule_st {
+  padding: 0
 }
