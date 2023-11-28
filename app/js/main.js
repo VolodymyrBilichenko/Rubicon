@@ -61,3 +61,21 @@ configSorts.forEach((configSort) => {
         }
     })
 })
+
+//footer
+
+const configCitys = document.querySelectorAll('.footer__city_head');
+
+configCitys.forEach(configCity => {
+    configCity.addEventListener('click', () => {
+        const isActive = configCity.classList.toggle('footer__city_head_active')
+        const configBody = configCity.nextElementSibling
+
+        if (isActive) {
+            configBody.classList.add('footer__city_body_active')
+        } else {
+            configBody.classList.remove('footer__city_body_active')
+
+        }
+    })
+})

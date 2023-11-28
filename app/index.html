@@ -21,10 +21,10 @@
             <div class="header__translate">
                 <img class="header__logo" src="img/Logo_mobile.svg">
                 <div class="translate__lang">
-                        <div class="slideThree">
-                            <input type="checkbox" value="None" id="slideThree" name="check" checked />
-                            <label for="slideThree"></label>
-                        </div>
+                    <div class="slideThree">
+                        <input type="checkbox" value="None" id="slideThree" name="check" checked/>
+                        <label for="slideThree"></label>
+                    </div>
                 </div>
             </div>
             <ul class="header__social">
@@ -102,7 +102,9 @@
                                     Київ, Україна
                                 </h3>
                                 <div class="swap">
-                                    <img src="img/swap.svg" alt="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                        <path d="M6.825 20L2 15.175L6.825 10.35L7.875 11.4L4.85 14.425H12.75V15.925H4.85L7.875 18.95L6.825 20ZM17.175 13.65L16.125 12.6L19.15 9.575H11.25V8.075H19.15L16.125 5.05L17.175 4L22 8.825L17.175 13.65Z"/>
+                                    </svg>
                                 </div>
                             </div>
                             <div class="form__where_body"></div>
@@ -186,9 +188,9 @@
                             </a>
                             <span>/ Розклад</span>
                         </div>
-                    <h2>
-                        Розклад автобусу Київ — Варшава
-                    </h2>
+                        <h2>
+                            Розклад автобусу Київ — Варшава
+                        </h2>
                     </div>
                     <div class="schedule__reverse">
                         <div class="schedule__reverse_con">
@@ -200,7 +202,9 @@
                             </p>
                         </div>
                         <button type="button" class="schedule__arrow">
-                            <img src="img/arrow-right.svg">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path d="M14.025 17.95L12.95 16.9L17.15 12.7H4V11.2H17.15L12.925 6.97505L14 5.92505L20.025 11.95L14.025 17.95Z"/>
+                            </svg>
                         </button>
                     </div>
                 </div>
@@ -502,6 +506,12 @@
                                     </span>
                                 </label>
                             </li>
+
+                            <li>
+                                <a href="#">
+                                    Показати усі зручності
+                                </a>
+                            </li>
                         </ul>
                     </div>
                     <div class="aside__config">
@@ -700,50 +710,152 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="ticket__info">
-                                <div class="ticket__info__first">
-                                    <div class="ticket__time">
-                                        <h3>
-                                            12:00
-                                        </h3>
+
+                            <div class='ticket__container_payment'>
+                                <div class="ticket__recomend">
+                                    <div class="rubicon__recomend">
+                                        <img src="img/verified.svg">
                                         <p>
-                                            <img src="img/Clock.svg">
-                                            09 год 00 хв
+                                            Rubikon рекомендує
                                         </p>
                                     </div>
-                                    <div class="ticket__city">
-                                        <h2>
-                                            Київ
-                                            <img src="img/Ukraine.jpg">
-                                        </h2>
+                                    <div class="rubicon__reis">
                                         <p>
-                                            вул. Терещенківська, 9, Київ, Київська область вул. Терещенківська, 9, Київ,
-                                            Київська область
+                                            Рейс з пересадками: 2
+                                        </p>
+                                    </div>
+                                    <div class="rubicon__fast">
+                                        <p>
+                                            Найшвидший
+                                        </p>
+                                    </div>
+                                    <div class="rubicon__chip">
+                                        <p>
+                                            Найдешевший
                                         </p>
                                     </div>
                                 </div>
-                                <div class="ticket__info__first">
-                                    <div class="ticket__time">
-                                        <h3>
-                                            23:00
-                                        </h3>
-                                        <p class="time__opacity">
+                                <div class="ticket__info">
+                                    <div class="ticket__info__first">
+                                        <div class="ticket__time">
+                                            <h3>
+                                                12:00
+                                            </h3>
+                                            <p>
+                                                <img src="img/Clock.svg">
+                                                09 год 00 хв
+                                            </p>
+                                        </div>
+                                        <div class="ticket__city">
+                                            <h2>
+                                                Київ
+                                                <img src="img/Ukraine.jpg">
+                                            </h2>
+                                            <p>
+                                                вул. Терещенківська, 9, Київ, Київська область вул.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="info__first_time">
+                                        <p>
                                             <img src="img/Clock.svg">
                                             09 год 00 хв
                                         </p>
                                     </div>
-                                    <div class="ticket__city">
-                                        <h2>
-                                            Івано-Франківськ
-                                            <img src="img/Ukraine.jpg">
-                                        </h2>
-                                        <p class="ticket__city_mar">
-                                            вул. Терещенківська, 9, Київ, Київська область вул. Терещенківська, 9, Київ,
-                                            Київська область
-                                        </p>
+                                    <div class="ticket__info__first">
+                                        <div class="ticket__time">
+                                            <h3>
+                                                23:00
+                                            </h3>
+                                            <p class="time__opacity">
+                                                <img src="img/Clock.svg">
+                                                09 год 00 хв
+                                            </p>
+                                        </div>
+                                        <div class="ticket__city">
+                                            <h2>
+                                                Івано-Франківськ
+                                                <img src="img/Ukraine.jpg">
+                                            </h2>
+                                            <p class="ticket__city_mar">
+                                                вул. Терещенківська, 9, Київ, Київська область вул. Терещенківська, 9, Київ,
+                                                Київська область
+                                            </p>
+                                        </div>
                                     </div>
+                                </div>
+                                <div class="ticket__options_des">
+                                    <ul>
+                                        <li>
+                                            <div class="graphic__rht">
+                                                <div class="graphic__item">
+                                                    <img src="img/options_roz.svg">
+                                                </div>
+                                                <div class="graphic__item">
+                                                    <img src="img/options_st.svg">
+                                                </div>
+                                                <div class="graphic__item">
+                                                    <img src="img/options_wifi.svg">
+                                                </div>
+                                                <div class="graphic__item">
+                                                    <img src="img/option-cold.svg">
+                                                </div>
+                                                <p>
+                                                    + 5
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="ticket__bus">
+                                                <div class="ticket__bus_icon">
+                                                    <img src="img/bus-des.svg" alt="icon">
+                                                </div>
+                                                <h3>
+                                                    Перевізник:
+                                                </h3>
+                                                <p>
+                                                    NeoBus
+                                                </p>
+                                                <div class="ticket__bus_rating">
+                                                    <p>
+                                                        5.0
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="graphic__lft">
+                                                <div class="graphic__calendar">
+                                                    <img src="img/calendar.svg">
+                                                </div>
+                                                <h3>
+                                                    Графік поїздок:
+                                                    <span>
+                                                    Через день
+                                                </span>
+                                                </h3>
+                                            </div>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
+                            <div class="ticket__pay__des">
+                                <div class="ticket__cost">
+                                    <div class="ticket__prepayment">
+                                        <img src="img/payment-des.svg">
+                                        <p class="color__red">
+                                            ОБОВ’ЯЗКОВА ОПЛАТА
+                                        </p>
+                                    </div>
+                                    <h2>
+                                        650 UAH
+                                    </h2>
+                                    <button type="button" class="ticket__bron">
+                                        КУПИТИ
+                                    </button>
+                                </div>
+                            </div>
+
                             <div class="ticket__arrival">
                                 <img src="img/arrival.svg">
                                 <p>
@@ -827,71 +939,155 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="ticket__recomend">
-                                <div class="rubicon__recomend">
-                                    <img src="img/verified.svg">
-                                    <p>
-                                        Rubikon рекомендує
-                                    </p>
+
+                            <div class='ticket__container_payment'>
+                                <div class="ticket__recomend">
+                                    <div class="rubicon__recomend">
+                                        <img src="img/verified.svg">
+                                        <p>
+                                            Rubikon рекомендує
+                                        </p>
+                                    </div>
+                                    <div class="rubicon__reis">
+                                        <p>
+                                            Рейс з пересадками: 2
+                                        </p>
+                                    </div>
+                                    <div class="rubicon__fast">
+                                        <p>
+                                            Найшвидший
+                                        </p>
+                                    </div>
+                                    <div class="rubicon__chip">
+                                        <p>
+                                            Найдешевший
+                                        </p>
+                                    </div>
                                 </div>
-                                <div class="rubicon__reis">
-                                    <p>
-                                        Рейс з пересадками: 2
-                                    </p>
-                                </div>
-                                <div class="rubicon__fast">
-                                    <p>
-                                        Найшвидший
-                                    </p>
-                                </div>
-                                <div class="rubicon__chip">
-                                    <p>
-                                        Найдешевший
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="ticket__info">
-                                <div class="ticket__info__first">
-                                    <div class="ticket__time">
-                                        <h3>
-                                            12:00
-                                        </h3>
+                                <div class="ticket__info">
+                                    <div class="ticket__info__first">
+                                        <div class="ticket__time">
+                                            <h3>
+                                                12:00
+                                            </h3>
+                                            <p>
+                                                <img src="img/Clock.svg">
+                                                09 год 00 хв
+                                            </p>
+                                        </div>
+                                        <div class="ticket__city">
+                                            <h2>
+                                                Київ
+                                                <img src="img/Ukraine.jpg">
+                                            </h2>
+                                            <p>
+                                                вул. Терещенківська, 9, Київ, Київська область вул.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="info__first_time">
                                         <p>
                                             <img src="img/Clock.svg">
                                             09 год 00 хв
                                         </p>
                                     </div>
-                                    <div class="ticket__city">
-                                        <h2>
-                                            Київ
-                                            <img src="img/Ukraine.jpg">
-                                        </h2>
-                                        <p>
-                                            Вокзальна Площа, 1
-                                        </p>
+                                    <div class="ticket__info__first">
+                                        <div class="ticket__time">
+                                            <h3>
+                                                23:00
+                                            </h3>
+                                            <p class="time__opacity">
+                                                <img src="img/Clock.svg">
+                                                09 год 00 хв
+                                            </p>
+                                        </div>
+                                        <div class="ticket__city">
+                                            <h2>
+                                                Івано-Франківськ
+                                                <img src="img/Ukraine.jpg">
+                                            </h2>
+                                            <p class="ticket__city_mar">
+                                                вул. Терещенківська, 9, Київ, Київська область вул. Терещенківська, 9, Київ,
+                                                Київська область
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="ticket__info__first">
-                                    <div class="ticket__time">
-                                        <h3>
-                                            23:00
-                                        </h3>
-                                        <p class="time__opacity">
-                                            <img src="img/Clock.svg">
-                                            09 год 00 хв
-                                        </p>
-                                    </div>
-                                    <div class="ticket__city">
-                                        <h2>
-                                            Івано-Франківськ
-                                            <img src="img/Ukraine.jpg">
-                                        </h2>
-                                        <p class="ticket__city_mar">
-                                            Вул. Чернівецька, буд...
-                                        </p>
-                                    </div>
+                                <div class="ticket__options_des">
+                                    <ul>
+                                        <li>
+                                            <div class="graphic__rht">
+                                                <div class="graphic__item">
+                                                    <img src="img/options_roz.svg">
+                                                </div>
+                                                <div class="graphic__item">
+                                                    <img src="img/options_st.svg">
+                                                </div>
+                                                <div class="graphic__item">
+                                                    <img src="img/options_wifi.svg">
+                                                </div>
+                                                <div class="graphic__item">
+                                                    <img src="img/option-cold.svg">
+                                                </div>
+                                                <p>
+                                                    + 5
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="ticket__bus">
+                                                <div class="ticket__bus_icon">
+                                                    <img src="img/bus-des.svg" alt="icon">
+                                                </div>
+                                                <h3>
+                                                    Перевізник:
+                                                </h3>
+                                                <p>
+                                                    NeoBus
+                                                </p>
+                                                <div class="ticket__bus_rating">
+                                                    <p>
+                                                        5.0
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="graphic__lft">
+                                                <div class="graphic__calendar">
+                                                    <img src="img/calendar.svg">
+                                                </div>
+                                                <h3>
+                                                    Графік поїздок:
+                                                    <span>
+                                                    Через день
+                                                </span>
+                                                </h3>
+                                            </div>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
+                            <div class="ticket__pay__des">
+                                <div class="ticket__cost">
+                                    <div class="ticket__prepayment">
+                                        <img src="img/check-des.svg">
+                                        <p class="color__green">
+                                            БЕЗ ПЕРЕДПЛАТИ
+                                        </p>
+                                    </div>
+                                    <h2>
+                                        650 UAH
+                                    </h2>
+                                    <button type="button" class="ticket__bron">
+                                        ЗАБРОНЮВАТИ
+                                    </button>
+                                    <p class="ticket__posadka">
+                                        ОПЛАТА ПРИ ПОСАДЦІ
+                                    </p>
+                                </div>
+                            </div>
+
                             <div class="ticket__arrival">
                                 <img src="img/arrival.svg">
                                 <p>
@@ -945,10 +1141,10 @@
                                 <h2>
                                     650 UAH
                                 </h2>
-                                <div class="ticket__prepayment_fiv">
-                                    <img src="img/payment.svg">
+                                <div class="ticket__prepayment">
+                                    <img src="img/check.svg">
                                     <p>
-                                        ПЕРЕДПЛАТА 15%
+                                        БЕЗ ПЕРЕДПЛАТИ
                                     </p>
                                 </div>
                             </div>
@@ -975,71 +1171,156 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="ticket__recomend">
-                                <div class="rubicon__recomend">
-                                    <img src="img/verified.svg">
-                                    <p>
-                                        Rubikon рекомендує
-                                    </p>
+
+                            <div class='ticket__container_payment'>
+                                <div class="ticket__recomend">
+                                    <div class="rubicon__recomend">
+                                        <img src="img/verified.svg">
+                                        <p>
+                                            Rubikon рекомендує
+                                        </p>
+                                    </div>
+                                    <div class="rubicon__reis">
+                                        <p>
+                                            Рейс з пересадками: 2
+                                        </p>
+                                    </div>
+                                    <div class="rubicon__fast">
+                                        <p>
+                                            Найшвидший
+                                        </p>
+                                    </div>
+                                    <div class="rubicon__chip">
+                                        <p>
+                                            Найдешевший
+                                        </p>
+                                    </div>
                                 </div>
-                                <div class="rubicon__reis">
-                                    <p>
-                                        Рейс з пересадками: 2
-                                    </p>
-                                </div>
-                                <div class="rubicon__fast">
-                                    <p>
-                                        Найшвидший
-                                    </p>
-                                </div>
-                                <div class="rubicon__chip">
-                                    <p>
-                                        Найдешевший
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="ticket__info">
-                                <div class="ticket__info__first">
-                                    <div class="ticket__time">
-                                        <h3>
-                                            12:00
-                                        </h3>
+                                <div class="ticket__info">
+                                    <div class="ticket__info__first">
+                                        <div class="ticket__time">
+                                            <h3>
+                                                12:00
+                                            </h3>
+                                            <p>
+                                                <img src="img/Clock.svg">
+                                                09 год 00 хв
+                                            </p>
+                                        </div>
+                                        <div class="ticket__city">
+                                            <h2>
+                                                Київ
+                                                <img src="img/Ukraine.jpg">
+                                            </h2>
+                                            <p>
+                                                вул. Терещенківська, 9, Київ, Київська область вул.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="info__first_time">
                                         <p>
                                             <img src="img/Clock.svg">
                                             09 год 00 хв
                                         </p>
                                     </div>
-                                    <div class="ticket__city">
-                                        <h2>
-                                            Київ
-                                            <img src="img/Ukraine.jpg">
-                                        </h2>
-                                        <p>
-                                            Вокзальна Площа, 1
-                                        </p>
+                                    <div class="ticket__info__first">
+                                        <div class="ticket__time">
+                                            <h3>
+                                                23:00
+                                            </h3>
+                                            <p class="time__opacity">
+                                                <img src="img/Clock.svg">
+                                                09 год 00 хв
+                                            </p>
+                                        </div>
+                                        <div class="ticket__city">
+                                            <h2>
+                                                Івано-Франківськ
+                                                <img src="img/Ukraine.jpg">
+                                            </h2>
+                                            <p class="ticket__city_mar">
+                                                вул. Терещенківська, 9, Київ, Київська область вул. Терещенківська, 9, Київ,
+                                                Київська область
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="ticket__info__first">
-                                    <div class="ticket__time">
-                                        <h3>
-                                            23:00
-                                        </h3>
-                                        <p class="time__opacity">
-                                            <img src="img/Clock.svg">
-                                            09 год 00 хв
-                                        </p>
-                                    </div>
-                                    <div class="ticket__city">
-                                        <h2>
-                                            Івано-Франківськ
-                                            <img src="img/Ukraine.jpg">
-                                        </h2>
-                                        <p class="ticket__city_mar">
-                                            Вул. Чернівецька, буд...
-                                        </p>
-                                    </div>
+                                <div class="ticket__options_des">
+                                    <ul>
+                                        <li>
+                                            <div class="graphic__rht">
+                                                <div class="graphic__item">
+                                                    <img src="img/options_roz.svg">
+                                                </div>
+                                                <div class="graphic__item">
+                                                    <img src="img/options_st.svg">
+                                                </div>
+                                                <div class="graphic__item">
+                                                    <img src="img/options_wifi.svg">
+                                                </div>
+                                                <div class="graphic__item">
+                                                    <img src="img/option-cold.svg">
+                                                </div>
+                                                <p>
+                                                    + 5
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="ticket__bus">
+                                                <div class="ticket__bus_icon">
+                                                    <img src="img/bus-des.svg" alt="icon">
+                                                </div>
+                                                <h3>
+                                                    Перевізник:
+                                                </h3>
+                                                <p>
+                                                    NeoBus
+                                                </p>
+                                                <div class="ticket__bus_rating">
+                                                    <p>
+                                                        5.0
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="graphic__lft">
+                                                <div class="graphic__calendar">
+                                                    <img src="img/calendar.svg">
+                                                </div>
+                                                <h3>
+                                                    Графік поїздок:
+                                                    <span>
+                                                    Через день
+                                                </span>
+                                                </h3>
+                                            </div>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
+                            <div class="ticket__pay__des">
+                                <div class="ticket__cost">
+                                    <div class="ticket__prepayment">
+                                        <img src="img/payment-des-op.svg">
+                                        <p class="color__gray">
+                                            ПЕРЕДПЛАТА 15%
+                                        </p>
+                                        <img class="ticket__question_img" src="img/question.svg">
+                                    </div>
+                                    <h2>
+                                        650 UAH
+                                    </h2>
+                                    <button type="button" class="ticket__bron">
+                                        КУПИТИ
+                                    </button>
+                                    <p class="ticket__posadka">
+                                        ДОПЛАТА ПРИ ПОСАДЦІ
+                                    </p>
+                                </div>
+                            </div>
+
                             <div class="ticket__arrival">
                                 <img src="img/arrival.svg">
                                 <p>
@@ -2100,10 +2381,14 @@
                     </h2>
                     <div class="reviews__con_button">
                         <div class="reviews__button button-prev">
-                            <img src="img/arrow-prev.svg">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path d="M14.025 17.95L12.95 16.9L17.15 12.7H4V11.2H17.15L12.925 6.97505L14 5.92505L20.025 11.95L14.025 17.95Z"/>
+                            </svg>
                         </div>
                         <div class="reviews__button button-next">
-                            <img src="img/arrow-next.svg">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path d="M14.025 17.95L12.95 16.9L17.15 12.7H4V11.2H17.15L12.925 6.97505L14 5.92505L20.025 11.95L14.025 17.95Z"/>
+                            </svg>
                         </div>
                     </div>
                 </div>
@@ -2183,8 +2468,206 @@
 
 <footer class="footer">
     <div class="container">
+        <img class="footer__logo" src="img/footer-logo.svg">
         <div class="footer__inner">
-            <img class="footer__logo" src="img/footer-logo.svg">
+            <ul class="footer__city">
+                <li>
+                    <div class="footer__city_head">
+                        <h3>
+                            Країни
+                        </h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36">
+                            <path d="M25.3875 12.9383L27 14.5508L18 23.5508L9 14.5883L10.6125 12.9758L18 20.3633L25.3875 12.9383Z"/>
+                        </svg>
+                    </div>
+                    <ul class="footer__city_body">
+                        <li>
+                            <a href="#">
+                                Чехія
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Молдова
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Польща
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Румунія
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Словаччина
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Україна
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>
+                                    Усі країни
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="footer__city_head">
+                        <h3>
+                            Міста
+                        </h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36">
+                            <path d="M25.3875 12.9383L27 14.5508L18 23.5508L9 14.5883L10.6125 12.9758L18 20.3633L25.3875 12.9383Z"/>
+                        </svg>
+                    </div>
+                    <ul class="footer__city_body">
+                        <li>
+                            <a href="#">
+                                Київ
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Одеса
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Дніпро
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Львів
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Харків
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Україна
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>
+                                    Усі міста
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="footer__city_head">
+                        <h3>
+                            Напрямки
+                        </h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36">
+                            <path d="M25.3875 12.9383L27 14.5508L18 23.5508L9 14.5883L10.6125 12.9758L18 20.3633L25.3875 12.9383Z"/>
+                        </svg>
+                    </div>
+                    <ul class="footer__city_body">
+                        <li>
+                            <a href="#">
+                                Київ - Одеса
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Київ - Львів
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Одеса - Київ
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Київ - Одеса
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Дніпро - Київ
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Львів - Київ
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>
+                                    Усі напрямки
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="footer__city_head">
+                        <h3>
+                            Станції
+                        </h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36">
+                            <path d="M25.3875 12.9383L27 14.5508L18 23.5508L9 14.5883L10.6125 12.9758L18 20.3633L25.3875 12.9383Z"/>
+                        </svg>
+                    </div>
+                    <ul class="footer__city_body">
+                        <li>
+                            <a href="#">
+                                Львов, автовокзал, ул. Стрыйская, 109
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Варшава, Автовозкал "Восточный", Любельская, 22
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Киев, Железнодорожный вокзал, Петлюры, 22
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Краков, Автовокзал, ул. Босяцкая, 18
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Ужгород, автовокзал, ул. Станционная, 2
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Кошице, автовокзал, пл. Станичная, 9
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>
+                                    Усі станції
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
             <ul class="footer__about">
                 <li>
                     <a href="#">Про нас</a>
@@ -2199,39 +2682,39 @@
                     <a href="#">Блог</a>
                 </li>
             </ul>
-            <ul class="footer__social">
-                <li>
-                    <a href="tel:+380 (097) 470-44-77">
-                        <img src="img/footer-phone.svg">
-                        +380 (097) 470-44-77
-                    </a>
-                </li>
-                <li>
-                    <a href="tel:+380 (097) 470-44-77">
-                        <img src="img/footer-phone.svg">
-                        +380 (097) 470-44-77
-                    </a>
-                </li>
-                <li>
-                    <ul class="footer__media">
-                        <li>
-                            <a href="#">
-                                <img src="img/viber-footer.svg">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="img/whatsapp.svg">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="img/telegram-footer.svg">
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
+            <div class="footer__social_con">
+                <ul class="footer__social">
+                    <li>
+                        <a href="tel:+380 (097) 470-44-77">
+                            <img src="img/footer-phone.svg">
+                            +380 (097) 470-44-77
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tel:+380 (097) 470-44-77">
+                            <img src="img/footer-phone.svg">
+                            +380 (097) 470-44-77
+                        </a>
+                    </li>
+                </ul>
+                <ul class="footer__media">
+                    <li>
+                        <a href="#">
+                            <img src="img/viber-footer.svg">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/whatsapp.svg">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/telegram-footer.svg">
+                        </a>
+                    </li>
+                </ul>
+            </div>
             <ul class="footer__politic">
                 <li>
                     <a href="#">
@@ -2245,7 +2728,23 @@
                 </li>
             </ul>
         </div>
-
+        <ul class="footer__politic_des">
+            <li>
+                <a href="#">
+                    Політика конфіденційності
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    Договір про публічну оферту
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    Made by <span>Webnauts Pro</span>💙
+                </a>
+            </li>
+        </ul>
     </div>
 </footer>
 

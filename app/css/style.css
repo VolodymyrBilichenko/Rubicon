@@ -216,7 +216,6 @@ button {
 body {
   margin: 0;
   font-size: 16px;
-  max-width: 1920px;
   line-height: 1.5;
   letter-spacing: .02em;
   -webkit-box-sizing: border-box;
@@ -414,7 +413,14 @@ textarea {
   border-radius: 8px;
   font-size: 16px;
   color: var(--black);
-  border: 1px solid var(--white)
+  border: 1px solid var(--white);
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease
+}
+.header .social__des_but button:hover {
+  background: var(--yellow);
+  border: 1px solid var(--yellow)
 }
 .header .social__des_but button img {
   max-width: 24px;
@@ -423,7 +429,15 @@ textarea {
 .header .social__des_but .des__but_black button {
   background: 0 0;
   border: 1px solid var(--border);
-  color: var(--white)
+  color: var(--white);
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease
+}
+.header .social__des_but .des__but_black button:hover {
+  background: var(--yellow);
+  color: var(--black);
+  border: 1px solid var(--yellow)
 }
 @media screen and (min-width:768px) {
   .header__inner .header__logo {
@@ -608,11 +622,18 @@ textarea {
   position: absolute;
   top: 0;
   right: -33px;
-  z-index: 5
+  z-index: 5;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease
 }
-.banner .form__where_head .swap img {
+.banner .form__where_head .swap:hover svg {
+  fill: var(--yellow)
+}
+.banner .form__where_head .swap svg {
   max-width: 24px;
-  margin: 0
+  margin: 0;
+  fill: var(--gray-border)
 }
 .banner .form__where button {
   display: -webkit-box;
@@ -741,12 +762,29 @@ textarea {
 .schedule__arrow {
   margin-left: auto;
   border-radius: 50%;
-  padding: 13px;
+  width: 50px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   border: 1px solid var(--gray-border);
   cursor: pointer
 }
-.schedule__arrow img {
-  max-width: 24px
+.schedule__arrow:hover svg {
+  fill: var(--yellow)
+}
+.schedule__arrow svg {
+  fill: var(--black);
+  max-width: 24px;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease
 }
 .schedule__reverse_con h3 {
   color: var(--gray-border);
@@ -887,8 +925,14 @@ textarea {
     padding: 10px
   }
 }
+.schedule__date_li:hover {
+  background: #fff7da
+}
 .schedule__date_li:hover p {
   color: var(--black)
+}
+.schedule__date_li:hover .departure__places {
+  background: var(--yellow)
 }
 .schedule__date_li:first-child {
   border-radius: 10px 0 0 10px
@@ -963,7 +1007,10 @@ textarea {
   justify-content: center;
   width: 22px;
   height: 22px;
-  margin-left: auto
+  margin-left: auto;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease
 }
 .departure__places_des {
   display: none
@@ -1048,7 +1095,8 @@ textarea {
   border-radius: 8px;
   padding: 30px;
   width: 100%;
-  max-width: 400px
+  max-width: 400px;
+  height: 100%
 }
 .ticket__aside h3 {
   font-size: 24px;
@@ -1062,7 +1110,8 @@ textarea {
 }
 .ticket__aside .aside__config:last-child {
   margin-bottom: 0;
-  border-bottom: none
+  border-bottom: none;
+  padding: 0
 }
 .ticket__aside .aside__config .config__header {
   cursor: pointer;
@@ -1104,6 +1153,11 @@ textarea {
 }
 .ticket__aside .config__body li {
   margin-bottom: 15px
+}
+.ticket__aside .config__body li a {
+  font-size: 12px;
+  color: var(--gray-border);
+  border: 1px dashed var(--gray-border)
 }
 .ticket__aside .config__body li:last-child {
   margin-bottom: 0
@@ -1251,7 +1305,7 @@ textarea {
   opacity: 0;
   margin-top: 30px;
   background: var(--white);
-  padding: 30px;
+  padding: 15px;
   position: absolute;
   top: 0;
   left: 0;
@@ -1259,7 +1313,8 @@ textarea {
   -webkit-transition: all .3s ease;
   -o-transition: all .3s ease;
   transition: all .3s ease;
-  z-index: 5
+  z-index: 5;
+  border-radius: 0 0 8px 8px
 }
 .ticket__sort_input .input__body p {
   font-size: 16px;
@@ -1268,7 +1323,8 @@ textarea {
   color: var(--black);
   white-space: nowrap;
   margin-right: 12px;
-  margin-bottom: 10px
+  margin-bottom: 10px;
+  cursor: pointer
 }
 .ticket__sort_input .input__body p:last-child {
   margin-bottom: 0;
@@ -1276,7 +1332,7 @@ textarea {
 }
 .ticket__sort_input .input__body_active {
   opacity: 1;
-  max-height: 100px
+  height: auto
 }
 @media screen and (min-width:1280px) {
   .ticket__aside {
@@ -1301,6 +1357,9 @@ textarea {
 }
 .ticket__list li:last-child {
   margin-bottom: 0
+}
+.ticket__list li:nth-child(1) .ticket__recomend {
+  display: none
 }
 .ticket__list .ticket__title {
   display: -webkit-box;
@@ -1718,6 +1777,141 @@ textarea {
   color: var(--gray-border);
   text-transform: uppercase
 }
+.ticket__list .info__first_time {
+  display: none
+}
+.ticket__list .ticket__options_des {
+  display: none;
+  padding-bottom: 23px
+}
+.ticket__list .ticket__options_des ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between
+}
+.ticket__list .ticket__options_des li {
+  background: 0 0;
+  padding: 0;
+  margin: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none
+}
+.ticket__list .ticket__options_des .graphic__rht {
+  gap: 10px
+}
+.ticket__list .ticket__options_des .graphic__item {
+  width: 30px;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center
+}
+.ticket__list .ticket__options_des .graphic__item img {
+  max-width: 20px
+}
+.ticket__list .ticket__options_des .graphic__item p {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 150%
+}
+.ticket__list .ticket__options_des .ticket__bus {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center
+}
+.ticket__list .ticket__options_des .ticket__bus .ticket__bus_icon {
+  width: 30px;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--white-bgd);
+  margin-right: 5px
+}
+.ticket__list .ticket__options_des .ticket__bus img {
+  max-width: 20px
+}
+.ticket__list .ticket__options_des .ticket__bus h3 {
+  margin-right: 5px;
+  color: var(--gray-border);
+  font-size: 12px;
+  font-weight: 400
+}
+.ticket__list .ticket__options_des .ticket__bus p {
+  font-size: 12px;
+  font-weight: 300;
+  color: var(--black);
+  margin-right: 5px
+}
+.ticket__list .ticket__options_des .ticket__bus .ticket__bus_rating {
+  background: var(--yellow-opacity);
+  border-radius: 16px;
+  width: 40px;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center
+}
+.ticket__list .ticket__options_des .ticket__bus .ticket__bus_rating p {
+  font-size: 12px;
+  color: var(--yellow-rat);
+  margin-right: 0
+}
+.ticket__list .ticket__options_des .graphic__lft .graphic__calendar {
+  width: 30px;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center
+}
+.ticket__list .ticket__options_des .graphic__lft .graphic__calendar img {
+  max-width: 20px
+}
+.ticket__list .ticket__pay__des {
+  display: none
+}
+.ticket__list .ticket__pay__des .ticket__cost {
+  display: block
+}
+.ticket__list .ticket__pay__des .ticket__bron {
+  display: block
+}
+.ticket__list .ticket__pay__des .ticket__posadka {
+  display: block
+}
 @media screen and (min-width:768px) {
   .ticket__list .ticket__header p {
     font-size: 18px
@@ -1776,6 +1970,170 @@ textarea {
   .ticket__list .rubicon__recomend p,
   .ticket__list .rubicon__reis p {
     font-size: 14px
+  }
+}
+@media screen and (min-width:1280px) {
+  .ticket__list li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+  }
+  .ticket__list li:nth-child(1) .ticket__recomend {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-bottom: 0;
+    margin-bottom: 37px;
+    border-bottom: none
+  }
+  .ticket__list .ticket__title {
+    display: none
+  }
+  .ticket__list .ticket__bron {
+    display: none
+  }
+  .ticket__list .ticket__cost {
+    display: none
+  }
+  .ticket__list .ticket__arrival {
+    display: none
+  }
+  .ticket__list .ticket__posadka {
+    display: none
+  }
+  .ticket__list .ticket__graphic {
+    display: none
+  }
+  .ticket__list .ticket__details {
+    display: none
+  }
+  .ticket__list .ticket__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    gap: 30px;
+    padding-bottom: 35px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--border)
+  }
+  .ticket__list .ticket__info__first {
+    margin-bottom: 0;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    max-width: 400px
+  }
+  .ticket__list .ticket__info__first:before {
+    display: none
+  }
+  .ticket__list .ticket__info__first:after {
+    display: none
+  }
+  .ticket__list .info__first_time {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+  }
+  .ticket__list .info__first_time p {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    color: var(--gray-border);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    white-space: nowrap
+  }
+  .ticket__list .info__first_time img {
+    width: 16px;
+    margin-right: 5px
+  }
+  .ticket__list .ticket__time {
+    margin-left: 0
+  }
+  .ticket__list .ticket__time p {
+    display: none
+  }
+  .ticket__list .ticket__time h3 {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal
+  }
+  .ticket__list .ticket__city {
+    margin-left: 15px
+  }
+  .ticket__list .ticket__city h2 {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal
+  }
+  .ticket__list .ticket__city p {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin-bottom: 0
+  }
+  .ticket__list .ticket__options_des {
+    display: block;
+    padding-right: 40px
+  }
+  .ticket__list .ticket__container_payment {
+    border-right: 1px solid var(--white-bgd)
+  }
+  .ticket__list .ticket__pay__des {
+    display: block;
+    padding: 0 20px
+  }
+  .ticket__list .ticket__pay__des .ticket__prepayment {
+    margin-bottom: 43px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center
+  }
+  .ticket__list .ticket__pay__des .ticket__prepayment p {
+    font-size: 12px
+  }
+  .ticket__list .ticket__pay__des .ticket__prepayment .color__red {
+    color: var(--red)
+  }
+  .ticket__list .ticket__pay__des .ticket__prepayment .color__green {
+    color: var(--green)
+  }
+  .ticket__list .ticket__pay__des .ticket__prepayment .color__gray {
+    color: var(--gray-border)
+  }
+  .ticket__list .ticket__pay__des .ticket__question_img {
+    max-width: 20px;
+    margin-left: 5px
+  }
+  .ticket__list .ticket__pay__des .ticket__cost h2 {
+    text-align: center;
+    margin-bottom: 15px
+  }
+  .ticket__list .ticket__pay__des .ticket__bron {
+    margin-bottom: 10px;
+    min-width: 240px
+  }
+  .ticket__list .ticket__pay__des .ticket__posadka {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--gray-border)
   }
 }
 .section__title {
@@ -2252,7 +2610,13 @@ textarea {
     font-size: 24px;
     color: var(--gray-border);
     padding: 15px;
-    text-align: start
+    text-align: start;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease
+  }
+  .questions__asked_des button:hover {
+    color: var(--black)
   }
   .questions__asked_des .asked_des_active {
     color: var(--black)
@@ -2386,13 +2750,34 @@ textarea {
   gap: 20px
 }
 .reviews__con_button .reviews__button {
-  padding: 12px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   border: 1px solid var(--gray-border);
-  cursor: pointer
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center
 }
-.reviews__con_button .reviews__button img {
-  max-width: 24px
+.reviews__con_button .reviews__button svg {
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+  max-width: 24px;
+  fill: var(--black)
+}
+.reviews__con_button .reviews__button:hover svg {
+  fill: var(--yellow)
+}
+.reviews__con_button .button-prev svg {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg)
 }
 @media screen and (min-width:1280px) {
   .reviews__con_button {
@@ -2496,7 +2881,13 @@ textarea {
   font-size: 16px;
   font-weight: 300;
   line-height: 150%;
-  color: var(--white)
+  color: var(--white);
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease
+}
+.footer__about a:hover {
+  color: var(--yellow-rat)
 }
 .footer__social {
   padding: 40px 0;
@@ -2517,26 +2908,32 @@ textarea {
   align-items: center;
   font-size: 16px;
   font-weight: 400;
-  color: var(--white)
+  color: var(--white);
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease
+}
+.footer__social a:hover {
+  color: var(--yellow-rat)
 }
 .footer__social a img {
   max-width: 24px;
   margin-right: 10px
 }
-.footer__social .footer__media {
+.footer__media {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-top: 30px
 }
-.footer__social .footer__media li {
+.footer__media li {
   margin: 0;
   margin-right: 20px
 }
-.footer__social .footer__media li:last-child {
+.footer__media li:last-child {
   margin-right: 0
 }
-.footer__social .footer__media img {
+.footer__media img {
   max-width: 50px;
   margin: 0
 }
@@ -2554,4 +2951,174 @@ textarea {
   font-size: 14px;
   font-weight: 300;
   line-height: 140%
+}
+.footer__city {
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid var(--border)
+}
+.footer__city li {
+  margin-bottom: 20px
+}
+.footer__city li:last-child {
+  margin-bottom: 0
+}
+.footer__city_head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center
+}
+.footer__city_head h3 {
+  font-size: 16px;
+  color: var(--white)
+}
+.footer__city_head svg {
+  max-width: 36px;
+  margin-left: auto;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+  fill: var(--gray-border)
+}
+.footer__city_head_active {
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease
+}
+.footer__city_head_active svg {
+  -webkit-transform: rotateX(180deg);
+  transform: rotateX(180deg);
+  fill: var(--yellow)
+}
+.footer__city_body {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease
+}
+.footer__city_body li {
+  margin-bottom: 15px
+}
+.footer__city_body a {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 140%;
+  color: var(--white);
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease
+}
+.footer__city_body a:hover {
+  color: var(--yellow-rat)
+}
+.footer__city_body span {
+  font-size: 12px;
+  color: var(--yellow-rat);
+  padding-bottom: 3px;
+  border-bottom: 1px dashed var(--yellow-rat)
+}
+.footer__city_body_active {
+  margin-top: 15px;
+  max-height: 500px;
+  opacity: 1;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease
+}
+.footer__social_con {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-left: auto
+}
+.footer__politic_des {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 50px
+}
+.footer__politic_des a {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 140%;
+  color: var(--gray-border)
+}
+.footer__politic_des a span {
+  border-bottom: 1px solid var(--gray-border)
+}
+@media screen and (min-width:768px) {
+  .footer {
+    padding: 30px 0
+  }
+  .footer__logo {
+    max-width: 130px
+  }
+}
+@media screen and (min-width:1280px) {
+  .footer__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid var(--border)
+  }
+  .footer__politic {
+    display: none
+  }
+  .footer__about {
+    border-bottom: none;
+    padding: 0;
+    margin-left: 80px
+  }
+  .footer__social {
+    border-bottom: none;
+    margin-left: auto;
+    padding: 0
+  }
+  .footer__media {
+    margin-top: auto
+  }
+  .footer__city {
+    border-bottom: none;
+    margin: 0;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 80px
+  }
+  .footer__city li {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 0
+  }
+  .footer__city_head svg {
+    display: none
+  }
+  .footer__city_body {
+    max-height: 500px;
+    opacity: 1;
+    overflow: unset;
+    margin-top: 20px
+  }
+  .footer__city_body li {
+    margin-bottom: 15px
+  }
+  .footer__city_body a:last-child {
+    white-space: nowrap
+  }
 }
