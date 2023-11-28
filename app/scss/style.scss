@@ -2981,7 +2981,9 @@ select {
 
   &__politic_des {
     display: flex;
-    gap: 50px;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 25px;
 
     a {
       font-size: 14px;
@@ -2992,6 +2994,12 @@ select {
 
       span {
         border-bottom: 1px solid var(--gray-border);
+      }
+    }
+
+    @media screen and (min-width: 768px) {
+      &{
+        gap: 50px;
       }
     }
   }
@@ -3064,6 +3072,10 @@ select {
     }
   }
 }
+
+
+
+
 
 .schedule__back{
   display: flex;
@@ -3161,6 +3173,3 @@ select {
 .schedule_st{
   padding: 0;
 }
-
-
-
