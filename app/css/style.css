@@ -291,7 +291,7 @@ textarea {
 .header {
   background: var(--header-bgd);
   padding-top: 20px;
-  margin-bottom: -1px
+  padding-bottom: 5px
 }
 .header__inner {
   display: -webkit-box;

@@ -122,7 +122,7 @@ select {
 .header {
   background: var(--header-bgd);
   padding-top: 20px;
-  margin-bottom: -1px;
+  padding-bottom: 5px;
 
   &__inner {
     display: flex;
