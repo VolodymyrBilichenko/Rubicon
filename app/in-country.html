@@ -602,18 +602,15 @@
                                 </p>
                                 <div class="ticket__sort_input">
                                     <div class="input__head">
-                                        <p>
+                                        <p id="selectedCurrency">
                                             Гривня, UAH
                                         </p>
                                         <img src="img/arrow-down.svg" alt="icon">
                                     </div>
                                     <div class="input__body">
-                                        <p>
-                                            USD
-                                        </p>
-                                        <p>
-                                            EUR
-                                        </p>
+                                        <p onclick="changeCurrency('UAH')">UAH</p>
+                                        <p onclick="changeCurrency('USD')">USD</p>
+                                        <p onclick="changeCurrency('EUR')">EUR</p>
                                     </div>
                                 </div>
                             </div>
@@ -623,18 +620,15 @@
                                 </p>
                                 <div class="ticket__sort_input ticket__sort_item_width">
                                     <div class="input__head">
-                                        <p>
+                                        <p id="selectedCurrencySort">
                                             Популярністю
                                         </p>
                                         <img src="img/arrow-down.svg" alt="icon">
                                     </div>
                                     <div class="input__body">
-                                        <p>
-                                            Швидкісь
-                                        </p>
-                                        <p>
-                                            Дата
-                                        </p>
+                                        <p onclick="changeCurrencySort('Популярністю')">UAH</p>
+                                        <p onclick="changeCurrencySort('Швидкісь')">Швидкісь</p>
+                                        <p onclick="changeCurrencySort('Дата')">Дата</p>
                                     </div>
                                 </div>
                             </div>

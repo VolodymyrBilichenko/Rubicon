@@ -6,17 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="12f65b34-37bd-4e6f-a6ab-fc27e14f9bf1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/city-catalog.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/city-catalog.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/city-to-country.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/city-to-country.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/country-to-city.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/country-to-city.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/country-to-country.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/country-to-country.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/in-city.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/in-city.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/in-country.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/in-country.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/js/app.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/js/app.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/scss/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/scss/style.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/terminals-and-stations.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/terminals-and-stations.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -61,6 +58,7 @@
       <updated>1700663158220</updated>
       <workItem from="1700663159343" duration="960000" />
       <workItem from="1701077797749" duration="68303000" />
+      <workItem from="1701254481735" duration="1197000" />
     </task>
     <servers />
   </component>
@@ -73,7 +71,6 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/app/js/main.js</url>
           <line>31</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
