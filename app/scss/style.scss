@@ -736,14 +736,32 @@ select {
 
 .schedule__date_li {
   width: 100%;
-  padding: 5px 6px 5px;
   background: var(--white);
-  border-bottom: 5px solid var(--border);
   cursor: pointer;
   transition: all .3s ease;
 
+  input{
+    display: none;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+  }
+  label{
+    cursor: pointer;
+    display: block;
+    padding: 5px 6px;
+    border-bottom: 5px solid var(--border);
+  }
+  input:checked + label {
+    transition: all .3s ease;
+    border-bottom: 5px solid var(--yellow);
+    p{
+      color: var(--black);
+    }
+  }
+
   @media screen and (min-width: 768px) {
-    & {
+    label {
       padding: 10px;
     }
   }
@@ -762,26 +780,42 @@ select {
 
   &:first-child {
     border-radius: 10px 0 0 10px;
+
+    label{
+      border-radius: 10px 0 0 10px;
+    }
   }
 
   &:last-child {
     border-radius: 0 10px 10px 0;
+
+    label{
+      border-radius: 0 10px 10px 0;
+    }
   }
 
-  &:hover {
+  label:hover {
     border-bottom: 5px solid var(--yellow);
   }
 
 
   @media screen and (min-width: 1280px) {
     & {
-      margin-bottom: 20px;
       max-width: 400px;
       border-radius: 8px;
-      padding: 20px;
-      border-bottom: 5px solid var(--yellow-rat);
       display: flex;
       align-items: center;
+      margin-bottom: 20px;
+    }
+    label{
+      padding: 20px;
+      border-bottom: 5px solid var(--yellow-rat);
+    &:first-child {
+      border-radius: 8px
+    }
+    &:last-child {
+      border-radius: 8px
+    }
     }
     &:first-child {
       border-radius: 8px
@@ -792,10 +826,17 @@ select {
   }
 }
 
+.departure__places_desk{
+  label{
+    display: flex;
+    width: 100%;
+    border-radius: 8px;
+  }
+}
+
 .schedule__date__departure {
   display: flex;
   align-items: center;
-
   p {
     font-size: 12px;
     color: var(--gray-border);
@@ -856,6 +897,10 @@ select {
     }
     &_des {
       display: flex;
+      label{
+        display: flex;
+        width: 100%;
+      }
     }
   }
 }
