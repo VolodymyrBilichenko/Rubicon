@@ -79,3 +79,26 @@ configCitys.forEach(configCity => {
         }
     })
 })
+
+// catalog
+
+const alphabetButtons = document.querySelectorAll('.city__title li button');
+const citySections = new Array();
+
+for (const section of document.querySelectorAll('.city__all')) {
+    citySections.push(section);
+}
+
+for (const button of alphabetButtons) {
+    button.addEventListener('click', (event) => {
+        const clickedLetter = event.target.textContent;
+        const correspondingCitySection = citySections.find((section) => section.querySelector('.all__head h3').textContent === clickedLetter);
+
+        if (correspondingCitySection) {
+            correspondingCitySection.scrollIntoView({
+                behavior: 'smooth',
+                block: 'center',
+            });
+        }
+    });
+}
