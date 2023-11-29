@@ -1112,12 +1112,9 @@ textarea {
 }
 .ticket__aside h3 {
   font-size: 24px;
-  color: var(--black);
-  margin-bottom: 30px
+  color: var(--black)
 }
 .ticket__aside .aside__config {
-  padding-bottom: 30px;
-  margin-bottom: 30px;
   border-bottom: 1px solid var(--border)
 }
 .ticket__aside .aside__config:last-child {
@@ -1132,7 +1129,8 @@ textarea {
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center
+  align-items: center;
+  padding: 30px 0
 }
 .ticket__aside .aside__config .config__header img {
   -webkit-transform: rotateX(180deg);
@@ -1225,7 +1223,7 @@ textarea {
 .ticket__aside .config__body_active {
   opacity: 1;
   max-height: 150px;
-  margin-top: 20px
+  margin-bottom: 30px
 }
 .ticket__search {
   display: none;
@@ -1439,7 +1437,6 @@ textarea {
   display: block;
   width: 1px;
   height: 100%;
-  border-radius: 50%;
   background: var(--yellow);
   position: absolute;
   left: 4px;
@@ -2478,6 +2475,9 @@ textarea {
 .questions {
   padding-bottom: 100px;
   background: var(--white-bgd)
+}
+.questions li {
+  cursor: pointer
 }
 .questions__asked_des {
   display: none

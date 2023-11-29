@@ -113,3 +113,19 @@ function changeCurrency(currency) {
 function changeCurrencySort(currency) {
     document.getElementById('selectedCurrencySort').textContent = currency;
 }
+
+//////
+
+const buttons = document.querySelectorAll('.questions__asked_des button');
+
+for (const button of buttons) {
+    button.addEventListener('click', (event) => {
+        const activeButton = document.querySelector('.asked_des_active');
+
+        if (activeButton) {
+            activeButton.classList.remove('asked_des_active');
+        }
+
+        button.classList.add('asked_des_active');
+    });
+}
