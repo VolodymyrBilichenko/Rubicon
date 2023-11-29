@@ -326,6 +326,7 @@ select {
       background-image: url(../img/calendar.svg);
       background-position: 10px 10px;
       background-repeat: no-repeat;
+      cursor: pointer;
     }
 
   }
@@ -333,6 +334,7 @@ select {
   &__form_date {
     display: flex;
     align-items: center;
+    cursor: pointer;
   }
 
   &__form_passenger {
@@ -377,6 +379,7 @@ select {
     padding: 14px 20px;
     width: 100%;
     display: none;
+    cursor: pointer;
 
     &_head {
       position: relative;
@@ -390,14 +393,7 @@ select {
         height: 24px;
         width: 100%;
         max-width: none;
-
-        &::-webkit-calendar-picker-indicator{
-
-        }
-
-        img{
-          display: none;
-        }
+        cursor: pointer;
       }
 
       p {
@@ -1134,7 +1130,7 @@ select {
       background: var(--white);
       padding: 15px;
       position: absolute;
-      top: 0;
+      top: 9px;
       left: 0;
       width: 100%;
       transition: all .3s ease;
@@ -1542,7 +1538,7 @@ select {
     display: flex;
     align-items: center;
     font-size: 10px;
-    padding: 8px 10px;
+    padding: 8px 14px;
 
     img {
       max-width: 15px;
@@ -3044,6 +3040,11 @@ select {
       font-weight: 300;
       line-height: 140%;
       color: var(--gray-border);
+      transition: all .3s ease;
+
+      &:hover{
+        color: var(--yellow-rat);
+      }
 
       span {
         border-bottom: 1px solid var(--gray-border);
@@ -3080,11 +3081,13 @@ select {
       border-bottom: none;
       padding: 0;
       margin-left: 80px;
+      margin-right: 20px;
     }
     &__social {
       border-bottom: none;
       margin-left: auto;
       padding: 0;
+      margin-bottom: 15px;
     }
     &__media {
       margin-top: auto;

@@ -14,6 +14,7 @@
       <change beforePath="$PROJECT_DIR$/app/in-city.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/in-city.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/in-country.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/in-country.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/js/app.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/js/app.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/js/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/scss/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/scss/style.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/terminals-and-stations.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/terminals-and-stations.html" afterDir="false" />
@@ -59,7 +60,7 @@
       <option name="presentableId" value="Default" />
       <updated>1700663158220</updated>
       <workItem from="1700663159343" duration="960000" />
-      <workItem from="1701077797749" duration="65755000" />
+      <workItem from="1701077797749" duration="68303000" />
     </task>
     <servers />
   </component>

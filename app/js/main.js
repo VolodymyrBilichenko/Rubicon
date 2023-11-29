@@ -102,3 +102,9 @@ for (const button of alphabetButtons) {
         }
     });
 }
+
+//// select
+
+function changeCurrency(currency) {
+    document.getElementById('selectedCurrency').textContent = currency;
+}

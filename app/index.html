@@ -19,7 +19,9 @@
     <div class="container">
         <div class="header__inner">
             <div class="header__translate">
-                <img class="header__logo" src="img/Logo_mobile.svg">
+                <a href="#">
+                    <img class="header__logo" src="img/Logo_mobile.svg">
+                </a>
                 <div class="translate__lang">
                     <div class="slide__lang">
                         <input type="radio" id="sl-1" name="check" checked/>
@@ -600,18 +602,14 @@
                                 </p>
                                 <div class="ticket__sort_input">
                                     <div class="input__head">
-                                        <p>
+                                        <p id="selectedCurrency">
                                             Гривня, UAH
                                         </p>
                                         <img src="img/arrow-down.svg" alt="icon">
                                     </div>
                                     <div class="input__body">
-                                        <p>
-                                            USD
-                                        </p>
-                                        <p>
-                                            EUR
-                                        </p>
+                                        <p onclick="changeCurrency('USD')">USD</p>
+                                        <p onclick="changeCurrency('EUR')">EUR</p>
                                     </div>
                                 </div>
                             </div>
@@ -2478,7 +2476,9 @@
 
 <footer class="footer">
     <div class="container">
-        <img class="footer__logo" src="img/footer-logo.svg">
+        <a href="#">
+            <img class="footer__logo" src="img/footer-logo.svg">
+        </a>
         <div class="footer__inner">
             <ul class="footer__city">
                 <li>

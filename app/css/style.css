@@ -527,7 +527,8 @@ textarea {
   border-right: 1px solid var(--border);
   background-image: url(../img/calendar.svg);
   background-position: 10px 10px;
-  background-repeat: no-repeat
+  background-repeat: no-repeat;
+  cursor: pointer
 }
 .banner__form_date {
   display: -webkit-box;
@@ -535,7 +536,8 @@ textarea {
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center
+  align-items: center;
+  cursor: pointer
 }
 .banner__form_passenger {
   width: 100%
@@ -576,7 +578,8 @@ textarea {
   border-right: 1px solid var(--border);
   padding: 14px 20px;
   width: 100%;
-  display: none
+  display: none;
+  cursor: pointer
 }
 .banner .form__where_head {
   position: relative;
@@ -589,10 +592,8 @@ textarea {
   background: 0 0;
   height: 24px;
   width: 100%;
-  max-width: none
-}
-.banner .form__where_head .form__where_inp img {
-  display: none
+  max-width: none;
+  cursor: pointer
 }
 .banner .form__where_head p {
   display: -webkit-box;
@@ -1318,7 +1319,7 @@ textarea {
   background: var(--white);
   padding: 15px;
   position: absolute;
-  top: 0;
+  top: 9px;
   left: 0;
   width: 100%;
   -webkit-transition: all .3s ease;
@@ -1734,7 +1735,7 @@ textarea {
   -ms-flex-align: center;
   align-items: center;
   font-size: 10px;
-  padding: 8px 10px
+  padding: 8px 14px
 }
 .ticket__list .rubicon__recomend img {
   max-width: 15px;
@@ -3118,7 +3119,13 @@ textarea {
   font-style: normal;
   font-weight: 300;
   line-height: 140%;
-  color: var(--gray-border)
+  color: var(--gray-border);
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease
+}
+.footer__politic_des a:hover {
+  color: var(--yellow-rat)
 }
 .footer__politic_des a span {
   border-bottom: 1px solid var(--gray-border)
@@ -3153,12 +3160,14 @@ textarea {
   .footer__about {
     border-bottom: none;
     padding: 0;
-    margin-left: 80px
+    margin-left: 80px;
+    margin-right: 20px
   }
   .footer__social {
     border-bottom: none;
     margin-left: auto;
-    padding: 0
+    padding: 0;
+    margin-bottom: 15px
   }
   .footer__media {
     margin-top: auto
