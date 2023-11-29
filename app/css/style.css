@@ -447,7 +447,10 @@ textarea {
   color: var(--gray-border);
   padding: 8px 10px;
   cursor: pointer;
-  display: block
+  display: block;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease
 }
 .slide__lang input:checked + label {
   color: var(--black);
@@ -940,13 +943,17 @@ textarea {
   cursor: pointer;
   display: block;
   padding: 5px 6px;
-  border-bottom: 5px solid var(--border)
+  border-bottom: 5px solid var(--border);
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease
 }
 .schedule__date_li input:checked + label {
   -webkit-transition: all .3s ease;
   -o-transition: all .3s ease;
   transition: all .3s ease;
-  border-bottom: 5px solid var(--yellow)
+  border-bottom: 5px solid var(--yellow);
+  transition: all .3s ease
 }
 .schedule__date_li input:checked + label p {
   color: var(--black)
@@ -1370,7 +1377,8 @@ textarea {
   -o-transition: all .3s ease;
   transition: all .3s ease;
   z-index: 5;
-  border-radius: 0 0 8px 8px
+  border-radius: 0 0 8px 8px;
+  overflow: hidden
 }
 .ticket__sort_input .input__body p {
   font-size: 16px;
@@ -3462,7 +3470,10 @@ textarea {
 }
 .translate__lang_catalog label {
   font-size: 20px;
-  font-weight: 300
+  font-weight: 300;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease
 }
 .translate__lang_catalog .slide__lang {
   padding: 10px
@@ -3475,6 +3486,9 @@ textarea {
     padding: 7px
   }
   .translate__lang_catalog label {
-    font-size: 16px
+    font-size: 16px;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease
   }
 }
